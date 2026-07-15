@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!-- Standalone single-file website: HTML, CSS, JavaScript, dan semua gambar sudah tertanam. -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manis Cerita Cake Shop menyediakan berbagai pilihan kue ulang tahun, custom cake, kue anak, wedding cake, dan hampers dengan pemesanan mudah." />
+  <title>Manis Cerita — Toko Kue Ulang Tahun</title>
+
+  <meta name="theme-color" content="#d94d7b" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manis Cerita — Toko Kue Ulang Tahun" />
+  <meta property="og:description" content="Temukan kue ulang tahun, kue anak, kue elegan, dan custom cake untuk perayaan spesial." />
+  <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDExMDAgOTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZmMGY0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZlMGM4Ii8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJjYWtlIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmYjFjOSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2YwNmY5ZCIvPjwvbGluZWFyR3JhZGllbnQ+CjxmaWx0ZXIgaWQ9InMiIHg9Ii0zMCUiIHk9Ii0zMCUiIHdpZHRoPSIxNjAlIiBoZWlnaHQ9IjE4MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyOCIgc3RkRGV2aWF0aW9uPSIyNCIgZmxvb2Qtb3BhY2l0eT0iLjE4Ii8+PC9maWx0ZXI+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjExMDAiIGhlaWdodD0iOTAwIiByeD0iNjAiIGZpbGw9InVybCgjYmcpIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iOTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii40Ii8+CjxjaXJjbGUgY3g9Ijk2MCIgY3k9IjE2MCIgcj0iMTIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMjUiLz4KPHBhdGggZD0iTTAgNjUwIEMxODAgNTYwLCAzMDAgNzMwLCA1MjAgNjUwIFM4OTAgNjAwLCAxMTAwIDcwMCBWOTAwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjQ1Ii8+CjxnIG9wYWNpdHk9Ii45Ij4KPHBhdGggZD0iTTExNSAzMDAgUTE1MCAyNDUgMTg1IDMwMCBRMTUwIDM1NSAxMTUgMzAwWiIgZmlsbD0iI2YzYTJiOCIvPgo8cGF0aCBkPSJNODUwIDI5MCBRODg1IDIzNSA5MjAgMjkwIFE4ODUgMzQ1IDg1MCAyOTBaIiBmaWxsPSIjZmZjYTdiIi8+CjxjaXJjbGUgY3g9Ijg5NSIgY3k9IjUyMCIgcj0iMTYiIGZpbGw9IiM3ZWNmYzAiLz4KPGNpcmNsZSBjeD0iMTY1IiBjeT0iNTcwIiByPSIxMiIgZmlsbD0iIzdlY2ZjMCIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNzKSI+CjxlbGxpcHNlIGN4PSI1NjAiIGN5PSI3NjUiIHJ4PSIzMzAiIHJ5PSI2NSIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEzIi8+CjxyZWN0IHg9IjI5MCIgeT0iNzAwIiB3aWR0aD0iNTQwIiBoZWlnaHQ9IjM1IiByeD0iMTgiIGZpbGw9IiNlYWQ4YzkiLz4KPHJlY3QgeD0iMzIwIiB5PSI1MDAiIHdpZHRoPSI0ODAiIGhlaWdodD0iMjAwIiByeD0iNTUiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTMyMCA1NjAgUTM2NSA2MjAgNDEwIDU2MCBUNTAwIDU2MCBUNTkwIDU2MCBUNjgwIDU2MCBUODAwIDU2MCBWNTAwIEgzMjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPHJlY3QgeD0iMzg1IiB5PSIzMzAiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTg1IiByeD0iNTIiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTM4NSAzODYgUTQyNSA0MzggNDY1IDM4NiBUNTQ1IDM4NiBUNjI1IDM4NiBUNzM1IDM4NiBWMzMwIEgzODVaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPHJlY3QgeD0iNDU2IiB5PSIyMTIiIHdpZHRoPSIyMDgiIGhlaWdodD0iMTI2IiByeD0iNDQiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTQ1NiAyNTIgUTQ5MCAyOTUgNTI0IDI1MiBUNTkyIDI1MiBUNjY0IDI1MiBWMjEyIEg0NTZaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPGcgZmlsbD0iI2ZmZiI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNjI1IiByPSIxMiIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjY1MCIgcj0iMTAiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSI2MTUiIHI9IjEyIi8+PGNpcmNsZSBjeD0iNzEwIiBjeT0iNjYwIiByPSI5Ii8+PC9nPgo8ZyBmaWxsPSIjZmZkNTZjIj48Y2lyY2xlIGN4PSI0NDUiIGN5PSI1ODUiIHI9IjEwIi8+PGNpcmNsZSBjeD0iNTc1IiBjeT0iNjM1IiByPSIxMSIvPjxjaXJjbGUgY3g9Ijc1NSIgY3k9IjU5MCIgcj0iMTAiLz48L2c+Cjx0ZXh0IHg9IjU2MCIgeT0iMzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9Ijg2Ij7wn46CPC90ZXh0Pgo8cmVjdCB4PSI1NDgiIHk9IjEzNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjgyIiByeD0iMTIiIGZpbGw9IiM3NTQ4NjEiLz4KPHBhdGggZD0iTTU2MCAxMzUgQzUzNSAxMDIsIDU5MCA5OCwgNTYwIDEzNVoiIGZpbGw9IiNmZmJhNTUiLz4KPC9nPgo8ZyBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZpbGw9IiM3MjQ4NWEiPgo8dGV4dCB4PSIxMTAiIHk9Ijc5MCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+RGlidWF0IGtodXN1cyB1bnR1ayBtb21lbiBzcGVzaWFsbXU8L3RleHQ+Cjx0ZXh0IHg9IjExMCIgeT0iODMwIiBmb250LXNpemU9IjIyIj5GcmVzaCDigKIgQ2FudGlrIOKAoiBCaXNhIEN1c3RvbTwvdGV4dD4KPC9nPgo8L3N2Zz4=" />
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHgyPSIxIiB5MT0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNkOTRkN2IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMjhiYWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTgiIGZpbGw9InVybCgjZykiLz4KPHBhdGggZD0iTTE2IDM2aDMydjEzYTYgNiAwIDAgMS02IDZIMjJhNiA2IDAgMCAxLTYtNlYzNloiIGZpbGw9IiNmZmY0ZjciLz4KPHBhdGggZD0iTTE2IDM2YzQgNiA4LTYgMTIgMHM4LTYgMTIgMCA4LTYgOCAwdi04SDE2djhaIiBmaWxsPSIjZmZmIi8+CjxyZWN0IHg9IjIwIiB5PSIyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjciIHJ4PSIzLjUiIGZpbGw9IiNmZmQyZGYiLz4KPHBhdGggZD0iTTMyIDIzYy02LTcgNy0xMSAwIDBaIiBmaWxsPSIjZmZkMjVmIi8+CjxyZWN0IHg9IjMwIiB5PSIxNCIgd2lkdGg9IjQiIGhlaWdodD0iMTEiIHJ4PSIyIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg==" type="image/svg+xml" />
+
+  <style>
+:root {
+  --rose: #d94d7b;
+  --rose-dark: #a9325c;
+  --rose-soft: #fff0f4;
+  --peach: #fff2e5;
+  --ink: #3f2d36;
+  --muted: #796a71;
+  --cream: #fffaf6;
+  --white: #ffffff;
+  --line: #eadfe3;
+  --shadow: 0 18px 50px rgba(92, 52, 70, 0.12);
+  --radius-lg: 34px;
+  --radius-md: 22px;
+  --radius-sm: 14px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+}
+img { display: block; width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+.container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+.section-pad { padding: 92px 0; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+.topbar { background: var(--ink); color: white; font-size: 14px; }
+.topbar-inner {
+  min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.topbar p { margin: 0; }
+.topbar a { font-weight: 700; color: #ffd3df; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 40; background: rgba(255, 250, 246, 0.94);
+  backdrop-filter: blur(18px); border-bottom: 1px solid rgba(234, 223, 227, .8);
+}
+.nav-wrap { min-height: 78px; display: flex; align-items: center; gap: 28px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; min-width: max-content; }
+.brand-mark {
+  width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50% 50% 44% 56%;
+  background: linear-gradient(135deg, var(--rose), #f28bae); color: white; font-family: Georgia, "Times New Roman", serif;
+  font-weight: 800; box-shadow: 0 10px 26px rgba(217, 77, 123, .28);
+}
+.brand strong { display: block; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 1; }
+.brand small { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+
+.main-nav { display: flex; align-items: center; justify-content: center; gap: 24px; flex: 1; }
+.main-nav a { font-size: 14px; font-weight: 600; color: #5f4d55; transition: .2s ease; }
+.main-nav a:hover { color: var(--rose); }
+.nav-actions { display: flex; gap: 10px; }
+.icon-btn, .cart-btn {
+  min-height: 42px; border: 1px solid var(--line); background: white; color: var(--ink);
+  border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
+}
+.icon-btn { width: 42px; font-size: 22px; }
+.cart-btn { padding: 0 14px; gap: 8px; font-weight: 700; }
+.cart-btn span {
+  width: 22px; height: 22px; border-radius: 50%; background: var(--rose); color: white;
+  display: grid; place-items: center; font-size: 11px;
+}
+.menu-toggle { display: none; border: 0; background: transparent; font-size: 26px; margin-left: auto; }
+
+.hero { position: relative; overflow: hidden; padding-top: 78px; }
+.hero::before {
+  content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%;
+  background: #ffe7ef; filter: blur(10px); top: -190px; left: -250px; z-index: -1;
+}
+.hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: 72px; }
+.eyebrow {
+  display: inline-block; color: var(--rose); font-weight: 800; font-size: 13px;
+  letter-spacing: .13em; text-transform: uppercase; margin-bottom: 15px;
+}
+.eyebrow.light { color: #ffd9e5; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; line-height: 1.08; letter-spacing: -.02em; }
+h1 { font-size: clamp(46px, 6vw, 76px); margin-bottom: 24px; }
+h1 em { color: var(--rose); font-style: normal; }
+h2 { font-size: clamp(36px, 4vw, 53px); margin-bottom: 18px; }
+.hero-copy > p { color: var(--muted); font-size: 18px; max-width: 640px; }
+.hero-search {
+  display: grid; grid-template-columns: 1fr auto; background: white; padding: 8px; border: 1px solid var(--line);
+  border-radius: 18px; box-shadow: 0 14px 34px rgba(69, 46, 56, .08); margin: 30px 0 22px;
+}
+.hero-search input { border: 0; outline: 0; padding: 0 16px; background: transparent; min-width: 0; }
+.hero-search button {
+  border: 0; background: var(--ink); color: white; border-radius: 13px; padding: 14px 22px; font-weight: 800;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  min-height: 52px; display: inline-flex; align-items: center; justify-content: center; border-radius: 15px;
+  padding: 0 24px; font-weight: 800; border: 1px solid transparent; transition: .22s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: linear-gradient(135deg, var(--rose), var(--rose-dark)); color: white; box-shadow: 0 12px 28px rgba(217, 77, 123, .26); }
+.btn.secondary { background: white; border-color: var(--line); }
+.btn.white { background: white; color: var(--rose-dark); }
+.btn.full { width: 100%; }
+.hero-points { display: flex; flex-wrap: wrap; gap: 14px 24px; margin-top: 28px; color: #6c5b63; font-size: 14px; font-weight: 600; }
+
+.hero-card { position: relative; }
+.hero-card > img { border-radius: 38px; box-shadow: var(--shadow); }
+.floating-card {
+  position: absolute; background: rgba(255,255,255,.93); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.9);
+  border-radius: 18px; padding: 14px 18px; box-shadow: var(--shadow);
+}
+.floating-card strong { display: block; font-size: 16px; }
+.floating-card span { color: var(--muted); font-size: 12px; }
+.floating-one { left: -28px; bottom: 108px; }
+.floating-two { right: -25px; top: 75px; }
+
+.trust-strip { padding: 25px 0; background: white; border-block: 1px solid var(--line); }
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.trust-grid article { display: flex; gap: 13px; align-items: center; padding: 12px; }
+.trust-grid article > span { width: 46px; height: 46px; flex: 0 0 46px; border-radius: 15px; display: grid; place-items: center; background: var(--rose-soft); font-size: 23px; }
+.trust-grid strong { display: block; font-size: 14px; }
+.trust-grid p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+
+.section-heading { margin-bottom: 42px; }
+.section-heading.split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: end; }
+.section-heading.split p { color: var(--muted); margin-bottom: 8px; max-width: 500px; }
+.section-heading.centered { text-align: center; max-width: 780px; margin-left: auto; margin-right: auto; margin-bottom: 44px; }
+.section-heading.centered p { color: var(--muted); }
+
+.category-section { background: #fffdfb; }
+.category-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.category-grid a {
+  background: white; border: 1px solid var(--line); border-radius: 22px; text-align: center; padding: 24px 12px;
+  transition: .22s ease; box-shadow: 0 10px 28px rgba(90, 62, 74, .05);
+}
+.category-grid a:hover { transform: translateY(-5px); border-color: #f2b7c9; box-shadow: var(--shadow); }
+.category-grid span { width: 58px; height: 58px; border-radius: 18px; background: var(--rose-soft); display: grid; place-items: center; margin: 0 auto 14px; font-size: 28px; }
+.category-grid strong { display: block; font-size: 15px; }
+.category-grid small { color: var(--muted); font-size: 11px; }
+
+.catalog-section { background: linear-gradient(180deg, #fff8f5 0%, #fffdfb 100%); }
+.catalog-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 30px; flex-wrap: wrap;
+}
+.catalog-search {
+  min-width: min(100%, 330px); flex: 1; max-width: 430px; display: flex; align-items: center; gap: 10px;
+  border: 1px solid var(--line); background: white; border-radius: 15px; padding: 0 15px;
+}
+.catalog-search input { width: 100%; min-height: 48px; border: 0; outline: 0; background: transparent; }
+.filter-tabs { display: flex; flex-wrap: wrap; gap: 9px; }
+.filter-tabs button {
+  border: 1px solid var(--line); background: white; color: var(--ink); border-radius: 999px; padding: 10px 16px; font-weight: 700; font-size: 13px;
+}
+.filter-tabs button.active { background: var(--ink); color: white; border-color: var(--ink); }
+
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.product-card {
+  background: white; border: 1px solid var(--line); border-radius: 24px; overflow: hidden;
+  box-shadow: 0 12px 32px rgba(91, 62, 74, .07); transition: .25s ease;
+}
+.product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.product-card.hidden { display: none; }
+.product-image { position: relative; aspect-ratio: 1.2 / 1; overflow: hidden; background: #fff4f7; }
+.product-image img { height: 100%; object-fit: cover; transition: transform .35s ease; }
+.product-card:hover .product-image img { transform: scale(1.04); }
+.badge {
+  position: absolute; top: 14px; left: 14px; z-index: 2; background: #fff; color: var(--rose-dark);
+  border-radius: 999px; padding: 7px 10px; font-size: 10px; font-weight: 800; box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+.badge.dark { color: #5a372a; }
+.badge.lavender { color: #7756ae; }
+.badge.cream { color: #966b40; }
+.badge.red { color: #a52735; }
+.badge.custom { color: #7045b8; }
+.wish {
+  position: absolute; right: 14px; top: 14px; width: 36px; height: 36px; border-radius: 50%;
+  border: 0; background: rgba(255,255,255,.94); font-size: 22px; color: var(--ink); z-index: 2;
+}
+.wish.active { color: var(--rose); }
+.product-body { padding: 20px; }
+.rating { color: #f0a926; font-size: 12px; font-weight: 800; }
+.rating span { color: var(--muted); font-weight: 500; }
+.product-body h3 { margin: 8px 0 7px; font-family: Georgia, "Times New Roman", serif; font-size: 22px; }
+.product-body p { color: var(--muted); font-size: 13px; min-height: 62px; }
+.product-meta { display: flex; gap: 8px; flex-wrap: wrap; margin: 15px 0; }
+.product-meta span { background: var(--rose-soft); color: #805568; font-size: 10px; font-weight: 700; padding: 6px 8px; border-radius: 999px; }
+.product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.product-bottom strong { font-size: 16px; }
+.add-cart { border: 0; background: var(--ink); color: white; border-radius: 12px; padding: 10px 12px; font-weight: 800; font-size: 12px; }
+.empty-state { display: none; text-align: center; padding: 70px 20px; }
+.empty-state.show { display: block; }
+.empty-state span { font-size: 54px; }
+.empty-state h3 { font-family: Georgia, "Times New Roman", serif; font-size: 30px; margin: 12px 0 5px; }
+.empty-state p { color: var(--muted); }
+
+.promo-section { background: white; }
+.promo-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 24px; }
+.main-promo {
+  min-height: 470px; padding: 52px; border-radius: 34px; color: white;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(255,255,255,.18), transparent 24%),
+    linear-gradient(135deg, #b63d68, #77354f);
+  display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 40px; position: relative; overflow: hidden;
+}
+.main-promo::after {
+  content: "🎂"; position: absolute; font-size: 190px; right: -20px; bottom: -55px; opacity: .09; transform: rotate(-9deg);
+}
+.main-promo h2 { font-size: clamp(34px, 4vw, 49px); }
+.main-promo p { color: #fbe7ee; }
+.promo-steps { display: grid; gap: 12px; position: relative; z-index: 2; }
+.promo-steps span {
+  display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.17);
+  border-radius: 15px; padding: 14px;
+}
+.promo-steps b { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: white; color: var(--rose-dark); }
+.promo-side { display: grid; gap: 24px; }
+.promo-side article {
+  padding: 32px; border-radius: 28px; background: var(--peach); min-height: 223px; display: flex; flex-direction: column; justify-content: center;
+}
+.promo-side article:last-child { background: #edf7f3; }
+.promo-side span { font-size: 38px; }
+.promo-side h3 { font-family: Georgia, "Times New Roman", serif; font-size: 27px; margin: 10px 0 6px; }
+.promo-side p { color: var(--muted); font-size: 13px; }
+.promo-side a { color: var(--rose-dark); font-weight: 800; font-size: 13px; }
+
+.flavor-section { background: #fff8f5; }
+.flavor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.flavor-grid article { background: white; border: 1px solid var(--line); padding: 24px; border-radius: 20px; }
+.flavor-grid span { font-size: 34px; }
+.flavor-grid h3 { margin: 10px 0 4px; }
+.flavor-grid p { color: var(--muted); margin: 0; font-size: 13px; }
+
+.process-section { background: white; }
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.process-grid article { position: relative; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: #fffdfc; }
+.process-grid article > span { position: absolute; right: 20px; top: 15px; font-family: Georgia, "Times New Roman", serif; font-size: 35px; color: #f1d7df; font-weight: 800; }
+.process-icon { width: 58px; height: 58px; display: grid; place-items: center; border-radius: 18px; background: var(--rose-soft); font-size: 27px; }
+.process-grid h3 { font-family: Georgia, "Times New Roman", serif; margin: 18px 0 5px; font-size: 23px; }
+.process-grid p { color: var(--muted); font-size: 13px; margin: 0; }
+
+.about-section { background: #fff8f5; }
+.about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; }
+.about-visual { position: relative; }
+.about-photo { border-radius: 36px; overflow: hidden; box-shadow: var(--shadow); }
+.about-mini {
+  position: absolute; right: -28px; bottom: 40px; width: 180px; background: white; padding: 20px; border-radius: 18px; box-shadow: var(--shadow);
+}
+.about-mini strong { display: block; color: var(--rose); font-family: Georgia, "Times New Roman", serif; font-size: 35px; }
+.about-mini span { color: var(--muted); font-size: 12px; }
+.about-copy > p { color: var(--muted); font-size: 16px; }
+.about-list { display: grid; gap: 16px; margin: 26px 0; }
+.about-list > div { display: flex; gap: 13px; align-items: flex-start; }
+.about-list b { width: 28px; height: 28px; flex: 0 0 28px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--rose); font-size: 12px; }
+.about-list span strong, .about-list span small { display: block; }
+.about-list span small { color: var(--muted); margin-top: 3px; }
+.text-link { color: var(--rose-dark); font-weight: 800; }
+
+.testimonial-section { background: white; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.testimonial-grid article { border: 1px solid var(--line); border-radius: 24px; padding: 28px; background: #fffdfc; }
+.stars { color: #edae2d; letter-spacing: .12em; }
+.testimonial-grid article > p { font-family: Georgia, "Times New Roman", serif; font-size: 21px; line-height: 1.5; margin: 16px 0 24px; }
+.person { display: flex; gap: 12px; align-items: center; }
+.person > span { width: 45px; height: 45px; border-radius: 50%; background: var(--rose-soft); color: var(--rose-dark); display: grid; place-items: center; font-weight: 800; }
+.person strong, .person small { display: block; }
+.person small { color: var(--muted); }
+
+.faq-section { background: #fff8f5; }
+.faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: start; }
+.faq-grid > div:first-child p { color: var(--muted); margin-bottom: 25px; }
+.accordion { display: grid; gap: 12px; }
+.faq-item { border: 1px solid var(--line); background: white; border-radius: 18px; overflow: hidden; }
+.faq-item button { width: 100%; border: 0; background: transparent; padding: 20px 22px; display: flex; justify-content: space-between; text-align: left; font-weight: 800; color: var(--ink); }
+.faq-item button b { color: var(--rose); font-size: 21px; }
+.faq-item > div { display: none; padding: 0 22px 20px; color: var(--muted); font-size: 14px; }
+.faq-item.active > div { display: block; }
+.faq-item.active { border-color: #f3bdcd; }
+
+.contact-section { background: white; }
+.contact-shell {
+  background: linear-gradient(135deg, #8d3655, #c74873); color: white; border-radius: 36px; padding: 56px;
+  display: grid; grid-template-columns: .82fr 1.18fr; gap: 54px; align-items: center;
+}
+.contact-copy p { color: #f8dfe8; }
+.contact-details { display: grid; gap: 10px; color: #fff2f6; font-size: 14px; }
+.order-form { background: white; color: var(--ink); border-radius: 25px; padding: 30px; box-shadow: 0 25px 55px rgba(70, 20, 40, .22); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.order-form label { display: grid; gap: 7px; font-weight: 700; font-size: 12px; margin-bottom: 14px; }
+.order-form input, .order-form select, .order-form textarea {
+  width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px; outline: 0; background: #fffdfc; color: var(--ink);
+}
+.order-form input:focus, .order-form select:focus, .order-form textarea:focus { border-color: #e690ac; box-shadow: 0 0 0 3px #fff0f4; }
+.order-form > small { display: block; color: var(--muted); margin-top: 10px; font-size: 10px; }
+.form-success { display: none; margin-top: 14px; padding: 12px; border-radius: 12px; background: #edf8f1; color: #2c7847; font-size: 12px; font-weight: 700; }
+.form-success.show { display: block; }
+
+.newsletter { padding: 34px 0; background: var(--peach); border-top: 1px solid #f0dfcf; }
+.newsletter-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.newsletter-inner > div { display: flex; gap: 14px; align-items: center; }
+.newsletter-inner > div > span { font-size: 34px; }
+.newsletter strong { display: block; }
+.newsletter p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+.newsletter form { display: grid; grid-template-columns: 1fr auto; min-width: 380px; background: white; padding: 6px; border-radius: 14px; border: 1px solid var(--line); }
+.newsletter input { border: 0; outline: 0; padding: 0 12px; min-width: 0; }
+.newsletter button { border: 0; background: var(--ink); color: white; border-radius: 10px; padding: 12px 20px; font-weight: 800; }
+
+.site-footer { background: #33242b; color: white; padding: 64px 0 24px; }
+.site-footer .brand small { color: #cbbcc2; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 44px; }
+.footer-brand p { color: #cbbcc2; max-width: 360px; font-size: 14px; margin: 20px 0; }
+.socials { display: flex; gap: 8px; }
+.socials a { width: 36px; height: 36px; border: 1px solid #59454e; border-radius: 10px; display: grid; place-items: center; font-size: 11px; }
+.footer-grid h4 { margin: 0 0 18px; font-size: 14px; }
+.footer-grid > div:not(.footer-brand) a { display: block; color: #cbbcc2; font-size: 13px; margin: 10px 0; }
+.footer-bottom { border-top: 1px solid #59454e; margin-top: 42px; padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; color: #b9a8af; font-size: 12px; }
+.footer-bottom p { margin: 0; }
+.footer-bottom div { display: flex; gap: 20px; }
+
+.floating-wa {
+  position: fixed; right: 22px; bottom: 22px; z-index: 35; border: 0; background: #2aa56f; color: white;
+  border-radius: 999px; padding: 14px 18px; box-shadow: 0 14px 35px rgba(31, 132, 88, .28); font-weight: 800;
+}
+.toast {
+  position: fixed; left: 50%; bottom: 28px; transform: translate(-50%, 130%); opacity: 0; z-index: 60;
+  background: var(--ink); color: white; border-radius: 14px; padding: 13px 18px; transition: .25s ease; font-size: 13px;
+}
+.toast.show { transform: translate(-50%, 0); opacity: 1; }
+
+@media (max-width: 1080px) {
+  .main-nav { gap: 15px; }
+  .main-nav a { font-size: 12px; }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .category-grid { grid-template-columns: repeat(3, 1fr); }
+  .promo-grid { grid-template-columns: 1fr; }
+  .promo-side { grid-template-columns: 1fr 1fr; }
+  .floating-one { left: 12px; }
+  .floating-two { right: 12px; }
+}
+
+@media (max-width: 860px) {
+  .menu-toggle { display: block; }
+  .main-nav {
+    display: none; position: absolute; left: 20px; right: 20px; top: 78px; background: white; border: 1px solid var(--line);
+    border-radius: 18px; padding: 16px; box-shadow: var(--shadow); flex-direction: column; align-items: stretch;
+  }
+  .main-nav.open { display: flex; }
+  .main-nav a { padding: 10px; font-size: 14px; }
+  .nav-actions { display: none; }
+  .hero-grid, .about-grid, .faq-grid, .contact-shell { grid-template-columns: 1fr; }
+  .hero-copy { order: 1; }
+  .hero-visual { order: 2; max-width: 680px; margin: 0 auto; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .section-heading.split { grid-template-columns: 1fr; gap: 4px; }
+  .main-promo { grid-template-columns: 1fr; }
+  .about-mini { right: 18px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
+  .footer-grid > div:last-child { grid-column: 2 / 4; }
+  .newsletter-inner { flex-direction: column; align-items: stretch; }
+  .newsletter form { min-width: 0; }
+}
+
+@media (max-width: 600px) {
+  .container { width: min(100% - 26px, 1180px); }
+  .section-pad { padding: 68px 0; }
+  .topbar-inner { justify-content: center; text-align: center; }
+  .topbar a { display: none; }
+  .nav-wrap { min-height: 70px; }
+  .main-nav { top: 70px; }
+  h1 { font-size: 43px; }
+  h2 { font-size: 36px; }
+  .hero { padding-top: 52px; }
+  .hero-grid { gap: 44px; }
+  .hero-search { grid-template-columns: 1fr; gap: 8px; }
+  .hero-search input { min-height: 46px; }
+  .hero-search button { width: 100%; }
+  .hero-actions .btn { width: 100%; }
+  .floating-card { position: static; margin-top: 10px; display: inline-block; }
+  .floating-two { float: right; }
+  .trust-grid, .category-grid, .product-grid, .flavor-grid, .process-grid, .promo-side, .form-row { grid-template-columns: 1fr; }
+  .catalog-toolbar { align-items: stretch; }
+  .catalog-search { max-width: none; }
+  .filter-tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 5px; }
+  .filter-tabs button { white-space: nowrap; }
+  .main-promo, .contact-shell { padding: 32px 24px; border-radius: 26px; }
+  .product-body p { min-height: auto; }
+  .about-grid { gap: 40px; }
+  .about-mini { position: static; width: 100%; margin-top: 12px; }
+  .newsletter form { grid-template-columns: 1fr; gap: 7px; }
+  .newsletter input { min-height: 44px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-grid > div:last-child { grid-column: auto; }
+  .footer-bottom { flex-direction: column; }
+  .floating-wa span { display: none; }
+}
+
+
+/* Cart drawer */
+body.cart-open { overflow: hidden; }
+.cart-overlay {
+  position: fixed; inset: 0; z-index: 70; background: rgba(38, 25, 31, .48);
+  opacity: 0; visibility: hidden; transition: .25s ease;
+}
+.cart-overlay.show { opacity: 1; visibility: visible; }
+.cart-drawer {
+  position: fixed; top: 0; right: 0; z-index: 75; width: min(460px, 100%);
+  height: 100dvh; background: #fffaf7; padding: 26px; display: flex; flex-direction: column;
+  transform: translateX(105%); transition: .3s ease; box-shadow: -24px 0 65px rgba(47, 28, 36, .2);
+}
+.cart-drawer.open { transform: translateX(0); }
+.cart-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.cart-header .eyebrow { margin-bottom: 6px; }
+.cart-header h2 { font-size: 34px; margin: 0; }
+.cart-close { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: white; color: var(--ink); }
+.cart-items { display: grid; gap: 14px; padding: 20px 2px; overflow-y: auto; }
+.cart-item { display: grid; grid-template-columns: 76px 1fr auto; gap: 13px; align-items: center; padding: 12px; border-radius: 17px; background: white; border: 1px solid var(--line); }
+.cart-item img { width: 76px; height: 70px; object-fit: cover; border-radius: 13px; }
+.cart-item h4 { margin: 0 0 4px; font-family: Georgia, "Times New Roman", serif; font-size: 17px; }
+.cart-item-price { color: var(--rose-dark); font-weight: 800; font-size: 13px; }
+.cart-qty { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; }
+.cart-qty button { width: 27px; height: 27px; border: 1px solid var(--line); background: #fffaf7; border-radius: 8px; }
+.cart-qty span { min-width: 16px; text-align: center; font-weight: 800; font-size: 12px; }
+.cart-remove { border: 0; background: transparent; color: #a86d82; font-size: 18px; align-self: start; }
+.cart-empty { margin: auto 0; text-align: center; padding: 36px 8px; }
+.cart-empty.hide { display: none; }
+.cart-empty > span { font-size: 58px; }
+.cart-empty h3 { font-family: Georgia, "Times New Roman", serif; font-size: 27px; margin: 8px 0 4px; }
+.cart-empty p { color: var(--muted); font-size: 13px; margin-bottom: 22px; }
+.cart-summary { display: none; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line); }
+.cart-summary.show { display: block; }
+.cart-summary > div { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.cart-summary > div strong { font-size: 21px; color: var(--rose-dark); }
+.cart-summary small { display: block; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
+
+@media (max-width: 600px) {
+  .cart-drawer { padding: 20px 16px; }
+  .cart-item { grid-template-columns: 66px 1fr auto; }
+  .cart-item img { width: 66px; height: 64px; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p>🎉 Gratis kartu ucapan untuk setiap pemesanan kue ulang tahun</p>
+      <a href="#kontak">Pesan hari ini</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="beranda">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Manis Cerita">
+        <span class="brand-mark">MC</span>
+        <span>
+          <strong>Manis Cerita</strong>
+          <small>Cake & Celebration</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#custom">Custom Cake</a>
+        <a href="#cara-pesan">Cara Pesan</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchFocus" aria-label="Cari kue">⌕</button>
+        <button class="cart-btn" id="cartButton" aria-label="Buka keranjang">
+          🛒 <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Kue spesial untuk hari paling bahagia</span>
+          <h1>Temukan kue ulang tahun yang <em>manis, cantik,</em> dan berkesan.</h1>
+          <p>
+            Pilih dari puluhan desain siap pesan atau buat kue custom sesuai tema, warna,
+            karakter, dan pesan pribadi untuk orang tersayang.
+          </p>
+
+          <div class="hero-search">
+            <label class="sr-only" for="heroSearch">Cari kue</label>
+            <input id="heroSearch" type="search" placeholder="Cari: kue anak, cokelat, minimalis..." />
+            <button id="heroSearchBtn">Cari Kue</button>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#katalog">Lihat Katalog</a>
+            <a class="btn secondary" href="#custom">Buat Kue Custom</a>
+          </div>
+
+          <div class="hero-points">
+            <span>✓ Dibuat fresh</span>
+            <span>✓ Bisa request desain</span>
+            <span>✓ Pengiriman terjadwal</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDExMDAgOTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZmMGY0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZlMGM4Ii8+PC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJjYWtlIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmYjFjOSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2YwNmY5ZCIvPjwvbGluZWFyR3JhZGllbnQ+CjxmaWx0ZXIgaWQ9InMiIHg9Ii0zMCUiIHk9Ii0zMCUiIHdpZHRoPSIxNjAlIiBoZWlnaHQ9IjE4MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyOCIgc3RkRGV2aWF0aW9uPSIyNCIgZmxvb2Qtb3BhY2l0eT0iLjE4Ii8+PC9maWx0ZXI+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjExMDAiIGhlaWdodD0iOTAwIiByeD0iNjAiIGZpbGw9InVybCgjYmcpIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iOTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii40Ii8+CjxjaXJjbGUgY3g9Ijk2MCIgY3k9IjE2MCIgcj0iMTIwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMjUiLz4KPHBhdGggZD0iTTAgNjUwIEMxODAgNTYwLCAzMDAgNzMwLCA1MjAgNjUwIFM4OTAgNjAwLCAxMTAwIDcwMCBWOTAwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjQ1Ii8+CjxnIG9wYWNpdHk9Ii45Ij4KPHBhdGggZD0iTTExNSAzMDAgUTE1MCAyNDUgMTg1IDMwMCBRMTUwIDM1NSAxMTUgMzAwWiIgZmlsbD0iI2YzYTJiOCIvPgo8cGF0aCBkPSJNODUwIDI5MCBRODg1IDIzNSA5MjAgMjkwIFE4ODUgMzQ1IDg1MCAyOTBaIiBmaWxsPSIjZmZjYTdiIi8+CjxjaXJjbGUgY3g9Ijg5NSIgY3k9IjUyMCIgcj0iMTYiIGZpbGw9IiM3ZWNmYzAiLz4KPGNpcmNsZSBjeD0iMTY1IiBjeT0iNTcwIiByPSIxMiIgZmlsbD0iIzdlY2ZjMCIvPgo8L2c+CjxnIGZpbHRlcj0idXJsKCNzKSI+CjxlbGxpcHNlIGN4PSI1NjAiIGN5PSI3NjUiIHJ4PSIzMzAiIHJ5PSI2NSIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEzIi8+CjxyZWN0IHg9IjI5MCIgeT0iNzAwIiB3aWR0aD0iNTQwIiBoZWlnaHQ9IjM1IiByeD0iMTgiIGZpbGw9IiNlYWQ4YzkiLz4KPHJlY3QgeD0iMzIwIiB5PSI1MDAiIHdpZHRoPSI0ODAiIGhlaWdodD0iMjAwIiByeD0iNTUiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTMyMCA1NjAgUTM2NSA2MjAgNDEwIDU2MCBUNTAwIDU2MCBUNTkwIDU2MCBUNjgwIDU2MCBUODAwIDU2MCBWNTAwIEgzMjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPHJlY3QgeD0iMzg1IiB5PSIzMzAiIHdpZHRoPSIzNTAiIGhlaWdodD0iMTg1IiByeD0iNTIiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTM4NSAzODYgUTQyNSA0MzggNDY1IDM4NiBUNTQ1IDM4NiBUNjI1IDM4NiBUNzM1IDM4NiBWMzMwIEgzODVaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPHJlY3QgeD0iNDU2IiB5PSIyMTIiIHdpZHRoPSIyMDgiIGhlaWdodD0iMTI2IiByeD0iNDQiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTQ1NiAyNTIgUTQ5MCAyOTUgNTI0IDI1MiBUNTkyIDI1MiBUNjY0IDI1MiBWMjEyIEg0NTZaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTQiLz4KPGcgZmlsbD0iI2ZmZiI+PGNpcmNsZSBjeD0iNDAwIiBjeT0iNjI1IiByPSIxMiIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjY1MCIgcj0iMTAiLz48Y2lyY2xlIGN4PSI2NDAiIGN5PSI2MTUiIHI9IjEyIi8+PGNpcmNsZSBjeD0iNzEwIiBjeT0iNjYwIiByPSI5Ii8+PC9nPgo8ZyBmaWxsPSIjZmZkNTZjIj48Y2lyY2xlIGN4PSI0NDUiIGN5PSI1ODUiIHI9IjEwIi8+PGNpcmNsZSBjeD0iNTc1IiBjeT0iNjM1IiByPSIxMSIvPjxjaXJjbGUgY3g9Ijc1NSIgY3k9IjU5MCIgcj0iMTAiLz48L2c+Cjx0ZXh0IHg9IjU2MCIgeT0iMzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9Ijg2Ij7wn46CPC90ZXh0Pgo8cmVjdCB4PSI1NDgiIHk9IjEzNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjgyIiByeD0iMTIiIGZpbGw9IiM3NTQ4NjEiLz4KPHBhdGggZD0iTTU2MCAxMzUgQzUzNSAxMDIsIDU5MCA5OCwgNTYwIDEzNVoiIGZpbGw9IiNmZmJhNTUiLz4KPC9nPgo8ZyBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZpbGw9IiM3MjQ4NWEiPgo8dGV4dCB4PSIxMTAiIHk9Ijc5MCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+RGlidWF0IGtodXN1cyB1bnR1ayBtb21lbiBzcGVzaWFsbXU8L3RleHQ+Cjx0ZXh0IHg9IjExMCIgeT0iODMwIiBmb250LXNpemU9IjIyIj5GcmVzaCDigKIgQ2FudGlrIOKAoiBCaXNhIEN1c3RvbTwvdGV4dD4KPC9nPgo8L3N2Zz4=" alt="Ilustrasi kue ulang tahun tiga tingkat" />
+            <div class="floating-card floating-one">
+              <strong>4.9/5</strong>
+              <span>1.200+ pelanggan puas</span>
+            </div>
+            <div class="floating-card floating-two">
+              <strong>Mulai Rp175.000</strong>
+              <span>Banyak ukuran tersedia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <article><span>🧁</span><div><strong>Fresh Setiap Hari</strong><p>Dibuat setelah pesanan dikonfirmasi.</p></div></article>
+        <article><span>🎨</span><div><strong>Desain Custom</strong><p>Warna, tema, tulisan, dan topper bebas.</p></div></article>
+        <article><span>🚚</span><div><strong>Pengiriman Aman</strong><p>Dikemas kuat dan dikirim terjadwal.</p></div></article>
+        <article><span>💬</span><div><strong>Konsultasi Gratis</strong><p>Kami bantu pilih ukuran dan desain.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section-pad category-section">
+      <div class="container">
+        <div class="section-heading split">
+          <div>
+            <span class="eyebrow">Belanja berdasarkan kebutuhan</span>
+            <h2>Pilih kategori favoritmu</h2>
+          </div>
+          <p>Dari ulang tahun anak hingga acara kantor, tersedia desain yang dapat disesuaikan.</p>
+        </div>
+
+        <div class="category-grid">
+          <a href="#katalog" data-category-link="anak"><span>🎈</span><strong>Kue Anak</strong><small>Ceria & penuh warna</small></a>
+          <a href="#katalog" data-category-link="elegan"><span>🌸</span><strong>Kue Elegan</strong><small>Manis dan berkelas</small></a>
+          <a href="#katalog" data-category-link="minimalis"><span>🤍</span><strong>Kue Minimalis</strong><small>Simple tetapi berkesan</small></a>
+          <a href="#katalog" data-category-link="cokelat"><span>🍫</span><strong>Kue Cokelat</strong><small>Favorit sepanjang masa</small></a>
+          <a href="#katalog" data-category-link="custom"><span>✨</span><strong>Custom Cake</strong><small>Sesuai ide pribadi</small></a>
+          <a href="#katalog" data-category-link="dewasa"><span>🥂</span><strong>Kue Dewasa</strong><small>Untuk sahabat & keluarga</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad catalog-section" id="katalog">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Katalog pilihan pelanggan</span>
+          <h2>Temukan kue yang cocok untuk perayaanmu</h2>
+          <p>Gunakan pencarian dan filter agar lebih cepat menemukan desain yang kamu suka.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="catalog-search">
+            <span>⌕</span>
+            <input id="catalogSearch" type="search" placeholder="Cari nama atau rasa kue..." />
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter katalog">
+            <button class="active" data-filter="semua">Semua</button>
+            <button data-filter="anak">Anak</button>
+            <button data-filter="elegan">Elegan</button>
+            <button data-filter="minimalis">Minimalis</button>
+            <button data-filter="cokelat">Cokelat</button>
+            <button data-filter="custom">Custom</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="elegan" data-name="strawberry bloom stroberi elegan">
+            <div class="product-image">
+              <span class="badge">Best Seller</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjBmNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZDhlNCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNmZjlmYmQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmNzZkOWEiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzg3LjciIHk9IjQ1OC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzYgMzg3LjcgNDU4LjEpIi8+CjxyZWN0IHg9IjQyNi4wIiB5PSI0NTQuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC00IDQyNi4wIDQ1NC43KSIvPgo8cmVjdCB4PSI1MTAuNyIgeT0iNDM1LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg3IDUxMC43IDQzNS41KSIvPgo8cmVjdCB4PSI1MjUuMCIgeT0iNDgwLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYzUzYTY4IiB0cmFuc2Zvcm09InJvdGF0ZSg5IDUyNS4wIDQ4MC43KSIvPgo8cmVjdCB4PSI1ODAuMiIgeT0iNDgwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYzUzYTY4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNiA1ODAuMiA0ODAuOSkiLz4KPHJlY3QgeD0iNjI3LjEiIHk9IjQ3My44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYzIDYyNy4xIDQ3My44KSIvPgo8cmVjdCB4PSI0MzAuNiIgeT0iNDY1LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1IDQzMC42IDQ2NS4xKSIvPgo8cmVjdCB4PSI1NzcuMiIgeT0iNDUyLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYzUzYTY4IiB0cmFuc2Zvcm09InJvdGF0ZSgzNyA1NzcuMiA0NTIuNCkiLz4KPHJlY3QgeD0iMzgxLjUiIHk9IjQ1NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTI2IDM4MS41IDQ1NS4zKSIvPgo8cmVjdCB4PSI0ODUuNCIgeT0iNDQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYzUzYTY4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDkgNDg1LjQgNDQ4LjYpIi8+CjxyZWN0IHg9IjQ2MC41IiB5PSI0NDYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0zMSA0NjAuNSA0NDYuMykiLz4KPHJlY3QgeD0iMzYxLjkiIHk9IjQ1Ny4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDM2MS45IDQ1Ny4xKSIvPgo8cmVjdCB4PSI1MzkuNyIgeT0iNDY5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjcgNTM5LjcgNDY5LjkpIi8+CjxyZWN0IHg9IjYwNC4xIiB5PSI0NTguNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNjNTNhNjgiIHRyYW5zZm9ybT0icm90YXRlKDUxIDYwNC4xIDQ1OC42KSIvPgo8cmVjdCB4PSI0MjkuNCIgeT0iNDY0LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYzUzYTY4IiB0cmFuc2Zvcm09InJvdGF0ZSg1NyA0MjkuNCA0NjQuNCkiLz4KPHJlY3QgeD0iNjYwLjYiIHk9IjQ2OC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMzMgNjYwLjYgNDY4LjkpIi8+CjxyZWN0IHg9IjIzOS45IiB5PSI0MzcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDMyIDIzOS45IDQzNy4xKSIvPgo8cmVjdCB4PSI0MzkuOSIgeT0iNDY3LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTIgNDM5LjkgNDY3LjEpIi8+CjxyZWN0IHg9IjI1MC4wIiB5PSIyNzIiIHdpZHRoPSI0MDAiIGhlaWdodD0iMTA1IiByeD0iMzgiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTI1MC4wIDMwOCBRMjg1LjAgMzQyIDMyMC4wIDMwOCBUMzkwLjAgMzA4IFQ0NjAuMCAzMDggVDUzMC4wIDMwOCBUNjAwLjAgMzA4IFQ2NzAuMCAzMDggVDc3MC4wIDMwOCBWMjcyIEgyNTAuMFoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44OCIvPgo8cmVjdCB4PSI0NTcuMyIgeT0iMzQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0NTcuMyAzNDguNikiLz4KPHJlY3QgeD0iMzQyLjYiIHk9IjM0NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjggMzQyLjYgMzQ1LjMpIi8+CjxyZWN0IHg9IjMyMS40IiB5PSIzMjIuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDI4IDMyMS40IDMyMi45KSIvPgo8cmVjdCB4PSIzNjguMyIgeT0iMzM4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxMSAzNjguMyAzMzguNikiLz4KPHJlY3QgeD0iMzMwLjQiIHk9IjM0MC4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDMzMC40IDM0MC4yKSIvPgo8cmVjdCB4PSIzMzQuOCIgeT0iMzQ1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTcgMzM0LjggMzQ1LjMpIi8+CjxyZWN0IHg9IjQ2My4yIiB5PSIzNTEuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01MyA0NjMuMiAzNTEuMSkiLz4KPHJlY3QgeD0iNDIwLjIiIHk9IjMzOC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTEgNDIwLjIgMzM4LjcpIi8+CjxyZWN0IHg9IjUxMC4zIiB5PSIzMzUuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU5IDUxMC4zIDMzNS41KSIvPgo8cmVjdCB4PSIyOTAuOSIgeT0iMzM0LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTcgMjkwLjkgMzM0LjMpIi8+CjxyZWN0IHg9IjMwMS42IiB5PSIzMzcuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC02OSAzMDEuNiAzMzcuNykiLz4KPHJlY3QgeD0iMzYzLjkiIHk9IjM0MC40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTcgMzYzLjkgMzQwLjQpIi8+Cjx0ZXh0IHg9IjQ1MCIgeT0iMjQ2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjkyIj7wn42TPC90ZXh0Pgo8cmVjdCB4PSI0MjciIHk9IjI2NiIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjU0IiByeD0iMjAiIGZpbGw9IiNjNTNhNjgiLz4KPHBhdGggZD0iTTQ1MCAyNjcgQzQyNSAyMzYsIDQ3OCAyMzksIDQ1MCAyNjdaIiBmaWxsPSIjZmZkNjZiIi8+CjwvZz4KPHRleHQgeD0iNDUwIiB5PSI2MDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzVhM2M0YyI+U3RyYXdiZXJyeSBCbG9vbTwvdGV4dD4KPC9zdmc+" alt="Kue Strawberry Bloom" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.9 <span>(136)</span></div>
+              <h3>Strawberry Bloom</h3>
+              <p>Sponge vanilla lembut, krim stroberi, dekorasi bunga manis.</p>
+              <div class="product-meta"><span>Ø 16 cm</span><span>8–10 porsi</span></div>
+              <div class="product-bottom"><strong>Rp245.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="cokelat" data-name="chocolate royale cokelat premium">
+            <div class="product-image">
+              <span class="badge dark">Premium</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y3ZWVlNyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Q5YmRhOSIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM3ZDRmM2IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0ZDJmMjYiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzg3LjciIHk9IjQ1OC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzYgMzg3LjcgNDU4LjEpIi8+CjxyZWN0IHg9IjQyNi4wIiB5PSI0NTQuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC00IDQyNi4wIDQ1NC43KSIvPgo8cmVjdCB4PSI1MTAuNyIgeT0iNDM1LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg3IDUxMC43IDQzNS41KSIvPgo8cmVjdCB4PSI1MjUuMCIgeT0iNDgwLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZjZjczIiB0cmFuc2Zvcm09InJvdGF0ZSg5IDUyNS4wIDQ4MC43KSIvPgo8cmVjdCB4PSI1ODAuMiIgeT0iNDgwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZjZjczIiB0cmFuc2Zvcm09InJvdGF0ZSgtNiA1ODAuMiA0ODAuOSkiLz4KPHJlY3QgeD0iNjI3LjEiIHk9IjQ3My44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYzIDYyNy4xIDQ3My44KSIvPgo8cmVjdCB4PSI0MzAuNiIgeT0iNDY1LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1IDQzMC42IDQ2NS4xKSIvPgo8cmVjdCB4PSI1NzcuMiIgeT0iNDUyLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZjZjczIiB0cmFuc2Zvcm09InJvdGF0ZSgzNyA1NzcuMiA0NTIuNCkiLz4KPHJlY3QgeD0iMzgxLjUiIHk9IjQ1NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTI2IDM4MS41IDQ1NS4zKSIvPgo8cmVjdCB4PSI0ODUuNCIgeT0iNDQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZjZjczIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDkgNDg1LjQgNDQ4LjYpIi8+CjxyZWN0IHg9IjQ2MC41IiB5PSI0NDYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0zMSA0NjAuNSA0NDYuMykiLz4KPHJlY3QgeD0iMzYxLjkiIHk9IjQ1Ny4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDM2MS45IDQ1Ny4xKSIvPgo8cmVjdCB4PSI1MzkuNyIgeT0iNDY5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjcgNTM5LjcgNDY5LjkpIi8+CjxyZWN0IHg9IjYwNC4xIiB5PSI0NTguNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmNmNzMiIHRyYW5zZm9ybT0icm90YXRlKDUxIDYwNC4xIDQ1OC42KSIvPgo8cmVjdCB4PSI0MjkuNCIgeT0iNDY0LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZjZjczIiB0cmFuc2Zvcm09InJvdGF0ZSg1NyA0MjkuNCA0NjQuNCkiLz4KPHJlY3QgeD0iNjYwLjYiIHk9IjQ2OC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMzMgNjYwLjYgNDY4LjkpIi8+CjxyZWN0IHg9IjIzOS45IiB5PSI0MzcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDMyIDIzOS45IDQzNy4xKSIvPgo8cmVjdCB4PSI0MzkuOSIgeT0iNDY3LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTIgNDM5LjkgNDY3LjEpIi8+CjxyZWN0IHg9IjI1MC4wIiB5PSIyNzIiIHdpZHRoPSI0MDAiIGhlaWdodD0iMTA1IiByeD0iMzgiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTI1MC4wIDMwOCBRMjg1LjAgMzQyIDMyMC4wIDMwOCBUMzkwLjAgMzA4IFQ0NjAuMCAzMDggVDUzMC4wIDMwOCBUNjAwLjAgMzA4IFQ2NzAuMCAzMDggVDc3MC4wIDMwOCBWMjcyIEgyNTAuMFoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44OCIvPgo8cmVjdCB4PSI0NTcuMyIgeT0iMzQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0NTcuMyAzNDguNikiLz4KPHJlY3QgeD0iMzQyLjYiIHk9IjM0NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjggMzQyLjYgMzQ1LjMpIi8+CjxyZWN0IHg9IjMyMS40IiB5PSIzMjIuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDI4IDMyMS40IDMyMi45KSIvPgo8cmVjdCB4PSIzNjguMyIgeT0iMzM4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxMSAzNjguMyAzMzguNikiLz4KPHJlY3QgeD0iMzMwLjQiIHk9IjM0MC4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDMzMC40IDM0MC4yKSIvPgo8cmVjdCB4PSIzMzQuOCIgeT0iMzQ1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTcgMzM0LjggMzQ1LjMpIi8+CjxyZWN0IHg9IjQ2My4yIiB5PSIzNTEuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01MyA0NjMuMiAzNTEuMSkiLz4KPHJlY3QgeD0iNDIwLjIiIHk9IjMzOC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTEgNDIwLjIgMzM4LjcpIi8+CjxyZWN0IHg9IjUxMC4zIiB5PSIzMzUuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU5IDUxMC4zIDMzNS41KSIvPgo8cmVjdCB4PSIyOTAuOSIgeT0iMzM0LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTcgMjkwLjkgMzM0LjMpIi8+CjxyZWN0IHg9IjMwMS42IiB5PSIzMzcuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC02OSAzMDEuNiAzMzcuNykiLz4KPHJlY3QgeD0iMzYzLjkiIHk9IjM0MC40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTcgMzYzLjkgMzQwLjQpIi8+CjxyZWN0IHg9IjMwNS4wIiB5PSIxNzQiIHdpZHRoPSIyOTAiIGhlaWdodD0iOTAiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMzA1LjAgMjEwIFEzNDAuMCAyNDQgMzc1LjAgMjEwIFQ0NDUuMCAyMTAgVDUxNS4wIDIxMCBUNTg1LjAgMjEwIFQ2NTUuMCAyMTAgVDcyNS4wIDIxMCBUODI1LjAgMjEwIFYxNzQgSDMwNS4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjM3OS45IiB5PSIyMzUuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDE1IDM3OS45IDIzNS45KSIvPgo8cmVjdCB4PSIzODMuNSIgeT0iMjMyLjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1NiAzODMuNSAyMzIuOCkiLz4KPHJlY3QgeD0iNDQ1LjUiIHk9IjIzMi4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTMgNDQ1LjUgMjMyLjIpIi8+CjxyZWN0IHg9IjM5NS44IiB5PSIyMzYuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDEzIDM5NS44IDIzNi41KSIvPgo8cmVjdCB4PSI1MzAuNSIgeT0iMjQxLjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTAgNTMwLjUgMjQxLjApIi8+CjxyZWN0IHg9IjM5Mi4yIiB5PSIyMzcuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU5IDM5Mi4yIDIzNy4yKSIvPgo8cmVjdCB4PSI1MTguMyIgeT0iMjQwLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1NiA1MTguMyAyNDAuMSkiLz4KPHJlY3QgeD0iNDk3LjYiIHk9IjIyOC44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMTcgNDk3LjYgMjI4LjgpIi8+CjxyZWN0IHg9IjM4OC41IiB5PSIyMzcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDY3IDM4OC41IDIzNy4xKSIvPgo8cmVjdCB4PSI0NzAuNiIgeT0iMjMzLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMSA0NzAuNiAyMzMuNSkiLz4KPHJlY3QgeD0iNDYxLjQiIHk9IjIyOS4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTggNDYxLjQgMjI5LjEpIi8+CjxyZWN0IHg9IjQ0OS4xIiB5PSIyMzguMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0yOSA0NDkuMSAyMzguMykiLz4KPHRleHQgeD0iNDUwIiB5PSIxNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPvCfjas8L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMTY4IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2ZmY2Y3MyIvPgo8cGF0aCBkPSJNNDUwIDE2OSBDNDI1IDEzOCwgNDc4IDE0MSwgNDUwIDE2OVoiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5DaG9jb2xhdGUgUm95YWxlPC90ZXh0Pgo8L3N2Zz4=" alt="Kue Chocolate Royale" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.8 <span>(98)</span></div>
+              <h3>Chocolate Royale</h3>
+              <p>Dark chocolate cake, ganache lembut, dan taburan cokelat.</p>
+              <div class="product-meta"><span>Ø 18 cm</span><span>10–14 porsi</span></div>
+              <div class="product-bottom"><strong>Rp315.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="anak" data-name="unicorn dream anak karakter">
+            <div class="product-image">
+              <span class="badge lavender">Anak Favorit</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2YxZjJmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2RlY2FmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNiYmE1ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4Zjc4ZTkiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzQxLjYiIHk9IjQ2Ny45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTIzIDM0MS42IDQ2Ny45KSIvPgo8cmVjdCB4PSI1MjQuOCIgeT0iNDc2LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjMgNTI0LjggNDc2LjcpIi8+CjxyZWN0IHg9IjI1Ni45IiB5PSI0NzUuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZjZmY2YiIHRyYW5zZm9ybT0icm90YXRlKDUgMjU2LjkgNDc1LjYpIi8+CjxyZWN0IHg9IjQxOS4yIiB5PSI0NzUuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NyA0MTkuMiA0NzUuMikiLz4KPHJlY3QgeD0iNjAwLjUiIHk9IjQzOS4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTMgNjAwLjUgNDM5LjEpIi8+CjxyZWN0IHg9IjU2MC4xIiB5PSI0ODAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01IDU2MC4xIDQ4MC42KSIvPgo8cmVjdCB4PSI2MDcuNSIgeT0iNDU4LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg3MCA2MDcuNSA0NTguNCkiLz4KPHJlY3QgeD0iNTI2LjgiIHk9IjQ3Ny43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmNmZjZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTAgNTI2LjggNDc3LjcpIi8+CjxyZWN0IHg9IjM4MC43IiB5PSI0NjMuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC0zIDM4MC43IDQ2My41KSIvPgo8cmVjdCB4PSI0NzQuNCIgeT0iNDcwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzYgNDc0LjQgNDcwLjkpIi8+CjxyZWN0IHg9IjUyOS42IiB5PSI0NTYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0yNSA1MjkuNiA0NTYuMykiLz4KPHJlY3QgeD0iMzE2LjIiIHk9IjQ2MC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTYgMzE2LjIgNDYwLjEpIi8+CjxyZWN0IHg9IjQzMS44IiB5PSI0NjQuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDMxIDQzMS44IDQ2NC4xKSIvPgo8cmVjdCB4PSI0ODQuNyIgeT0iNDYxLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTAgNDg0LjcgNDYxLjQpIi8+CjxyZWN0IHg9IjU0MC43IiB5PSI0NDEuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDQwIDU0MC43IDQ0MS4zKSIvPgo8cmVjdCB4PSI0MDAuNCIgeT0iNDY5LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTkgNDAwLjQgNDY5LjUpIi8+CjxyZWN0IHg9IjI4OC44IiB5PSI0NzMuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDQzIDI4OC44IDQ3My43KSIvPgo8cmVjdCB4PSIyOTYuOSIgeT0iNDU0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNiAyOTYuOSA0NTQuOCkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjMyMC4zIiB5PSIzNDUuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDY0IDMyMC4zIDM0NS4yKSIvPgo8cmVjdCB4PSIzNzQuNSIgeT0iMzMwLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNTIgMzc0LjUgMzMwLjQpIi8+CjxyZWN0IHg9IjM4NS4wIiB5PSIzNDQuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDMxIDM4NS4wIDM0NC42KSIvPgo8cmVjdCB4PSI1NDEuNiIgeT0iMzI1LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTMgNTQxLjYgMzI1LjkpIi8+CjxyZWN0IHg9IjQwMy4yIiB5PSIzMzAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDYyIDQwMy4yIDMzMC42KSIvPgo8cmVjdCB4PSIzMzguMSIgeT0iMzQ0LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgwIDMzOC4xIDM0NC4wKSIvPgo8cmVjdCB4PSIyODguNSIgeT0iMzI0LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmY2ZmNmIiB0cmFuc2Zvcm09InJvdGF0ZSgxNiAyODguNSAzMjQuMykiLz4KPHJlY3QgeD0iMzEyLjUiIHk9IjMyOC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjcgMzEyLjUgMzI4LjcpIi8+CjxyZWN0IHg9IjQ3Ny41IiB5PSIzNTIuOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZjZmY2YiIHRyYW5zZm9ybT0icm90YXRlKC00NiA0NzcuNSAzNTIuOCkiLz4KPHJlY3QgeD0iNDc2LjAiIHk9IjM0My4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMjMgNDc2LjAgMzQzLjApIi8+CjxyZWN0IHg9IjU3MC40IiB5PSIzNDYuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU0IDU3MC40IDM0Ni43KSIvPgo8cmVjdCB4PSIzNzQuNCIgeT0iMzQyLjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg1NCAzNzQuNCAzNDIuNikiLz4KPHRleHQgeD0iNDUwIiB5PSIyNDYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPvCfpoQ8L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMjY2IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2ZmNmZjZiIvPgo8cGF0aCBkPSJNNDUwIDI2NyBDNDI1IDIzNiwgNDc4IDIzOSwgNDUwIDI2N1oiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5Vbmljb3JuIERyZWFtPC90ZXh0Pgo8L3N2Zz4=" alt="Kue Unicorn Dream" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 5.0 <span>(84)</span></div>
+              <h3>Unicorn Dream</h3>
+              <p>Kue warna pastel dengan topper unicorn dan pilihan nama.</p>
+              <div class="product-meta"><span>Ø 16 cm</span><span>8–10 porsi</span></div>
+              <div class="product-bottom"><strong>Rp275.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="anak" data-name="blue galaxy bintang anak">
+            <div class="product-image">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2VhZjVmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M3ZGNmZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM2YWFhZjYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0MTY5YzciLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNDI4LjYiIHk9IjQ2MS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoNDkgNDI4LjYgNDYxLjkpIi8+CjxyZWN0IHg9IjQ1My41IiB5PSI0NjMuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC0yMyA0NTMuNSA0NjMuMikiLz4KPHJlY3QgeD0iNTA4LjQiIHk9IjQ3My4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ2IDUwOC40IDQ3My4xKSIvPgo8cmVjdCB4PSIzNjEuNSIgeT0iNDM5LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMzYxLjUgNDM5LjQpIi8+CjxyZWN0IHg9IjY1OS4xIiB5PSI0NjYuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2MzNWYiIHRyYW5zZm9ybT0icm90YXRlKC0zMCA2NTkuMSA0NjYuNCkiLz4KPHJlY3QgeD0iNTk5LjMiIHk9IjQzOC4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTYxIDU5OS4zIDQzOC4wKSIvPgo8cmVjdCB4PSI2MjAuOCIgeT0iNDYzLjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg0OCA2MjAuOCA0NjMuOCkiLz4KPHJlY3QgeD0iNDIzLjIiIHk9IjQ3NS40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjIgNDIzLjIgNDc1LjQpIi8+CjxyZWN0IHg9IjUxMy4xIiB5PSI0NTkuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC00OSA1MTMuMSA0NTkuMCkiLz4KPHJlY3QgeD0iNTE5LjciIHk9IjQ1NC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ5IDUxOS43IDQ1NC41KSIvPgo8cmVjdCB4PSIzNjYuOSIgeT0iNDQ2LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjdjMzVmIiB0cmFuc2Zvcm09InJvdGF0ZSgzIDM2Ni45IDQ0Ni4wKSIvPgo8cmVjdCB4PSIyNTYuNiIgeT0iNDcxLjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjdjMzVmIiB0cmFuc2Zvcm09InJvdGF0ZSgzMiAyNTYuNiA0NzEuOCkiLz4KPHJlY3QgeD0iNjA2LjAiIHk9IjQ1My42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzM1ZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTY2IDYwNi4wIDQ1My42KSIvPgo8cmVjdCB4PSIzMjEuMSIgeT0iNDc5LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNTcgMzIxLjEgNDc5LjUpIi8+CjxyZWN0IHg9IjM5NC4wIiB5PSI0NjkuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2MzNWYiIHRyYW5zZm9ybT0icm90YXRlKDM3IDM5NC4wIDQ2OS4wKSIvPgo8cmVjdCB4PSI0NzkuOCIgeT0iNDQ0LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMSA0NzkuOCA0NDQuNSkiLz4KPHJlY3QgeD0iMjY0LjIiIHk9IjQ1MS4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzM1ZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzQgMjY0LjIgNDUxLjApIi8+CjxyZWN0IHg9IjI4NS42IiB5PSI0NjguOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2MzNWYiIHRyYW5zZm9ybT0icm90YXRlKC02OCAyODUuNiA0NjguOSkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjQ0MS42IiB5PSIzNDMuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDE5IDQ0MS42IDM0My43KSIvPgo8cmVjdCB4PSI0MTAuOSIgeT0iMzU0LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg1MyA0MTAuOSAzNTQuOSkiLz4KPHJlY3QgeD0iNDk3LjMiIHk9IjMzNy4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzM1ZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyIDQ5Ny4zIDMzNy4yKSIvPgo8cmVjdCB4PSI1MDMuMiIgeT0iMzI2LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg0MiA1MDMuMiAzMjYuOCkiLz4KPHJlY3QgeD0iMzM4LjUiIHk9IjM1MS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU1IDMzOC41IDM1MS45KSIvPgo8cmVjdCB4PSIzMDkuNiIgeT0iMzQ0LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNiAzMDkuNiAzNDQuNykiLz4KPHJlY3QgeD0iNTQ4LjMiIHk9IjMyNC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU1IDU0OC4zIDMyNC45KSIvPgo8cmVjdCB4PSIzMTUuMCIgeT0iMzU0LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjdjMzVmIiB0cmFuc2Zvcm09InJvdGF0ZSg0MyAzMTUuMCAzNTQuNikiLz4KPHJlY3QgeD0iNTAzLjEiIHk9IjM1NC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjggNTAzLjEgMzU0LjEpIi8+CjxyZWN0IHg9IjU3Ni4xIiB5PSIzNDAuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC01NyA1NzYuMSAzNDAuNCkiLz4KPHJlY3QgeD0iNDUyLjQiIHk9IjMyNC44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgNDUyLjQgMzI0LjgpIi8+CjxyZWN0IHg9IjQ0Mi4zIiB5PSIzMzQuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2MzNWYiIHRyYW5zZm9ybT0icm90YXRlKC02MyA0NDIuMyAzMzQuNykiLz4KPHJlY3QgeD0iMzA1LjAiIHk9IjE3NCIgd2lkdGg9IjI5MCIgaGVpZ2h0PSI5MCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0zMDUuMCAyMTAgUTM0MC4wIDI0NCAzNzUuMCAyMTAgVDQ0NS4wIDIxMCBUNTE1LjAgMjEwIFQ1ODUuMCAyMTAgVDY1NS4wIDIxMCBUNzI1LjAgMjEwIFQ4MjUuMCAyMTAgVjE3NCBIMzA1LjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzk3LjAiIHk9IjIzNi4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTIzIDM5Ny4wIDIzNi4zKSIvPgo8cmVjdCB4PSI0ODYuNiIgeT0iMjM5LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjMgNDg2LjYgMjM5LjYpIi8+CjxyZWN0IHg9IjM1NS42IiB5PSIyMzkuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2MzNWYiIHRyYW5zZm9ybT0icm90YXRlKDUgMzU1LjYgMjM5LjIpIi8+CjxyZWN0IHg9IjQzNC45IiB5PSIyMzkuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NyA0MzQuOSAyMzkuMSkiLz4KPHJlY3QgeD0iNTIzLjYiIHk9IjIyNS41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTMgNTIzLjYgMjI1LjUpIi8+CjxyZWN0IHg9IjUwMy44IiB5PSIyNDEuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01IDUwMy44IDI0MS4xKSIvPgo8cmVjdCB4PSI1MjcuMCIgeT0iMjMyLjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg3MCA1MjcuMCAyMzIuOCkiLz4KPHJlY3QgeD0iNDg3LjYiIHk9IjI0MC4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzM1ZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTAgNDg3LjYgMjQwLjApIi8+CjxyZWN0IHg9IjQxNi4xIiB5PSIyMzQuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC0zIDQxNi4xIDIzNC43KSIvPgo8cmVjdCB4PSI0NjEuOSIgeT0iMjM3LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzYgNDYxLjkgMjM3LjUpIi8+CjxyZWN0IHg9IjQ4OC45IiB5PSIyMzIuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0yNSA0ODguOSAyMzIuMCkiLz4KPHJlY3QgeD0iMzg0LjYiIHk9IjIzMy40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTYgMzg0LjYgMjMzLjQpIi8+Cjx0ZXh0IHg9IjQ1MCIgeT0iMTQ4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjkyIj7irZA8L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMTY4IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2Y3YzM1ZiIvPgo8cGF0aCBkPSJNNDUwIDE2OSBDNDI1IDEzOCwgNDc4IDE0MSwgNDUwIDE2OVoiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5CbHVlIEdhbGF4eTwvdGV4dD4KPC9zdmc+" alt="Kue Blue Galaxy" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.9 <span>(62)</span></div>
+              <h3>Blue Galaxy</h3>
+              <p>Tema luar angkasa dengan bintang dan gradasi biru cerah.</p>
+              <div class="product-meta"><span>Ø 18 cm</span><span>10–14 porsi</span></div>
+              <div class="product-bottom"><strong>Rp295.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="minimalis" data-name="minimal beige sederhana minimalis">
+            <div class="product-image">
+              <span class="badge cream">Minimalis</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjhlZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2YxZGVjYSIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNmNmQ1YjQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkNWE4N2MiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzQxLjYiIHk9IjQ2Ny45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTIzIDM0MS42IDQ2Ny45KSIvPgo8cmVjdCB4PSI1MjQuOCIgeT0iNDc2LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjMgNTI0LjggNDc2LjcpIi8+CjxyZWN0IHg9IjI1Ni45IiB5PSI0NzUuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNhOTZkNTQiIHRyYW5zZm9ybT0icm90YXRlKDUgMjU2LjkgNDc1LjYpIi8+CjxyZWN0IHg9IjQxOS4yIiB5PSI0NzUuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NyA0MTkuMiA0NzUuMikiLz4KPHJlY3QgeD0iNjAwLjUiIHk9IjQzOS4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTMgNjAwLjUgNDM5LjEpIi8+CjxyZWN0IHg9IjU2MC4xIiB5PSI0ODAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01IDU2MC4xIDQ4MC42KSIvPgo8cmVjdCB4PSI2MDcuNSIgeT0iNDU4LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg3MCA2MDcuNSA0NTguNCkiLz4KPHJlY3QgeD0iNTI2LjgiIHk9IjQ3Ny43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2E5NmQ1NCIgdHJhbnNmb3JtPSJyb3RhdGUoMTAgNTI2LjggNDc3LjcpIi8+CjxyZWN0IHg9IjM4MC43IiB5PSI0NjMuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC0zIDM4MC43IDQ2My41KSIvPgo8cmVjdCB4PSI0NzQuNCIgeT0iNDcwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMzYgNDc0LjQgNDcwLjkpIi8+CjxyZWN0IHg9IjUyOS42IiB5PSI0NTYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0yNSA1MjkuNiA0NTYuMykiLz4KPHJlY3QgeD0iMzE2LjIiIHk9IjQ2MC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTYgMzE2LjIgNDYwLjEpIi8+CjxyZWN0IHg9IjQzMS44IiB5PSI0NjQuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDMxIDQzMS44IDQ2NC4xKSIvPgo8cmVjdCB4PSI0ODQuNyIgeT0iNDYxLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTAgNDg0LjcgNDYxLjQpIi8+CjxyZWN0IHg9IjU0MC43IiB5PSI0NDEuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDQwIDU0MC43IDQ0MS4zKSIvPgo8cmVjdCB4PSI0MDAuNCIgeT0iNDY5LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTkgNDAwLjQgNDY5LjUpIi8+CjxyZWN0IHg9IjI4OC44IiB5PSI0NzMuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDQzIDI4OC44IDQ3My43KSIvPgo8cmVjdCB4PSIyOTYuOSIgeT0iNDU0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNiAyOTYuOSA0NTQuOCkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjMyMC4zIiB5PSIzNDUuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDY0IDMyMC4zIDM0NS4yKSIvPgo8cmVjdCB4PSIzNzQuNSIgeT0iMzMwLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNTIgMzc0LjUgMzMwLjQpIi8+CjxyZWN0IHg9IjM4NS4wIiB5PSIzNDQuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDMxIDM4NS4wIDM0NC42KSIvPgo8cmVjdCB4PSI1NDEuNiIgeT0iMzI1LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTMgNTQxLjYgMzI1LjkpIi8+CjxyZWN0IHg9IjQwMy4yIiB5PSIzMzAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDYyIDQwMy4yIDMzMC42KSIvPgo8cmVjdCB4PSIzMzguMSIgeT0iMzQ0LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgwIDMzOC4xIDM0NC4wKSIvPgo8cmVjdCB4PSIyODguNSIgeT0iMzI0LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjYTk2ZDU0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNiAyODguNSAzMjQuMykiLz4KPHJlY3QgeD0iMzEyLjUiIHk9IjMyOC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjcgMzEyLjUgMzI4LjcpIi8+CjxyZWN0IHg9IjQ3Ny41IiB5PSIzNTIuOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNhOTZkNTQiIHRyYW5zZm9ybT0icm90YXRlKC00NiA0NzcuNSAzNTIuOCkiLz4KPHJlY3QgeD0iNDc2LjAiIHk9IjM0My4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMjMgNDc2LjAgMzQzLjApIi8+CjxyZWN0IHg9IjU3MC40IiB5PSIzNDYuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU0IDU3MC40IDM0Ni43KSIvPgo8cmVjdCB4PSIzNzQuNCIgeT0iMzQyLjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg1NCAzNzQuNCAzNDIuNikiLz4KPHRleHQgeD0iNDUwIiB5PSIyNDYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPvCfjL88L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMjY2IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2E5NmQ1NCIvPgo8cGF0aCBkPSJNNDUwIDI2NyBDNDI1IDIzNiwgNDc4IDIzOSwgNDUwIDI2N1oiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5NaW5pbWFsIEJlaWdlPC90ZXh0Pgo8L3N2Zz4=" alt="Kue Minimal Beige" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.7 <span>(49)</span></div>
+              <h3>Minimal Beige</h3>
+              <p>Desain clean dengan palet beige, cocok untuk semua usia.</p>
+              <div class="product-meta"><span>Ø 14 cm</span><span>6–8 porsi</span></div>
+              <div class="product-bottom"><strong>Rp195.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="elegan" data-name="red velvet love romantis merah">
+            <div class="product-image">
+              <span class="badge red">Romantis</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjBmMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZDRkNCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNiZDM5NDciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3ZjFmMmQiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNjU5LjQiIHk9IjQzNS42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTYxIDY1OS40IDQzNS42KSIvPgo8cmVjdCB4PSI2MzUuOSIgeT0iNDQ2LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTYgNjM1LjkgNDQ2LjUpIi8+CjxyZWN0IHg9IjYxMC44IiB5PSI0ODMuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2M1NWQiIHRyYW5zZm9ybT0icm90YXRlKC05IDYxMC44IDQ4My4wKSIvPgo8cmVjdCB4PSIzNzcuMSIgeT0iNDY5LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxIDM3Ny4xIDQ2OS4wKSIvPgo8cmVjdCB4PSIzNDMuNSIgeT0iNDQ2LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTggMzQzLjUgNDQ2LjApIi8+CjxyZWN0IHg9IjU4My45IiB5PSI0NDUuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDYwIDU4My45IDQ0NS43KSIvPgo8cmVjdCB4PSIzMjkuMSIgeT0iNDU2LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgzNyAzMjkuMSA0NTYuOSkiLz4KPHJlY3QgeD0iMjYwLjUiIHk9IjQ2Mi4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjIgMjYwLjUgNDYyLjEpIi8+CjxyZWN0IHg9IjQ4MS4zIiB5PSI0NzkuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDQ4MS4zIDQ3OS43KSIvPgo8cmVjdCB4PSI1NzQuNiIgeT0iNDczLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNTQgNTc0LjYgNDczLjkpIi8+CjxyZWN0IHg9IjY1Ni42IiB5PSI0NzUuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0yMCA2NTYuNiA0NzUuMykiLz4KPHJlY3QgeD0iNDY1LjMiIHk9IjQ2NC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTY2IDQ2NS4zIDQ2NC41KSIvPgo8cmVjdCB4PSI0NjMuNSIgeT0iNDQyLjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjdjNTVkIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgNDYzLjUgNDQyLjMpIi8+CjxyZWN0IHg9IjQwMi45IiB5PSI0MzguNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDUgNDAyLjkgNDM4LjUpIi8+CjxyZWN0IHg9IjY0MC4yIiB5PSI0NDYuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDY5IDY0MC4yIDQ0Ni4yKSIvPgo8cmVjdCB4PSIyNjAuMiIgeT0iNDQ5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjggMjYwLjIgNDQ5LjkpIi8+CjxyZWN0IHg9IjM5OS4xIiB5PSI0NTcuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmN2M1NWQiIHRyYW5zZm9ybT0icm90YXRlKDQzIDM5OS4xIDQ1Ny45KSIvPgo8cmVjdCB4PSI1NjUuOCIgeT0iNDc1LjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMSA1NjUuOCA0NzUuMikiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjQwNC4zIiB5PSIzMzcuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDM2IDQwNC4zIDMzNy45KSIvPgo8cmVjdCB4PSI0MzIuNCIgeT0iMzM1LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNCA0MzIuNCAzMzUuNSkiLz4KPHJlY3QgeD0iNDk0LjUiIHk9IjMyMi4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNyA0OTQuNSAzMjIuMykiLz4KPHJlY3QgeD0iNTA1LjAiIHk9IjM1My40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzU1ZCIgdHJhbnNmb3JtPSJyb3RhdGUoOSA1MDUuMCAzNTMuNCkiLz4KPHJlY3QgeD0iNTQ1LjQiIHk9IjM1My42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzU1ZCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYgNTQ1LjQgMzUzLjYpIi8+CjxyZWN0IHg9IjU3OS45IiB5PSIzNDguNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC02MyA1NzkuOSAzNDguNykiLz4KPHJlY3QgeD0iNDM1LjciIHk9IjM0Mi43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNSA0MzUuNyAzNDIuNykiLz4KPHJlY3QgeD0iNTQzLjMiIHk9IjMzMy45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzU1ZCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgNTQzLjMgMzMzLjkpIi8+CjxyZWN0IHg9IjM5OS44IiB5PSIzMzYuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0yNiAzOTkuOCAzMzYuMCkiLz4KPHJlY3QgeD0iNDc2LjAiIHk9IjMzMS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2Y3YzU1ZCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ5IDQ3Ni4wIDMzMS4zKSIvPgo8cmVjdCB4PSI0NTcuNyIgeT0iMzI5LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzEgNDU3LjcgMzI5LjcpIi8+CjxyZWN0IHg9IjM4NS40IiB5PSIzMzcuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC01NCAzODUuNCAzMzcuMikiLz4KPHRleHQgeD0iNDUwIiB5PSIyNDYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPuKdpO+4jzwvdGV4dD4KPHJlY3QgeD0iNDI3IiB5PSIyNjYiIHdpZHRoPSI0NiIgaGVpZ2h0PSI1NCIgcng9IjIwIiBmaWxsPSIjZjdjNTVkIi8+CjxwYXRoIGQ9Ik00NTAgMjY3IEM0MjUgMjM2LCA0NzggMjM5LCA0NTAgMjY3WiIgZmlsbD0iI2ZmZDY2YiIvPgo8L2c+Cjx0ZXh0IHg9IjQ1MCIgeT0iNjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YTNjNGMiPlJlZCBWZWx2ZXQgTG92ZTwvdGV4dD4KPC9zdmc+" alt="Kue Red Velvet Love" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.9 <span>(71)</span></div>
+              <h3>Red Velvet Love</h3>
+              <p>Red velvet lembut dengan cream cheese dan dekorasi hati.</p>
+              <div class="product-meta"><span>Ø 16 cm</span><span>8–10 porsi</span></div>
+              <div class="product-bottom"><strong>Rp265.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="anak" data-name="fun kids party ceria pelangi">
+            <div class="product-image">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjdkYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZGY4MSIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM3M2Q4YzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyYWE3OWIiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMjczLjEiIHk9IjQ2OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjQgMjczLjEgNDY4LjcpIi8+CjxyZWN0IHg9IjM0Ny4wIiB5PSI0NDcuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC01MiAzNDcuMCA0NDcuMykiLz4KPHJlY3QgeD0iMzYxLjMiIHk9IjQ2Ny44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzEgMzYxLjMgNDY3LjgpIi8+CjxyZWN0IHg9IjU3NC45IiB5PSI0NDAuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xMyA1NzQuOSA0NDAuNykiLz4KPHJlY3QgeD0iMzg2LjEiIHk9IjQ0Ny41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjIgMzg2LjEgNDQ3LjUpIi8+CjxyZWN0IHg9IjI5Ny41IiB5PSI0NjYuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDAgMjk3LjUgNDY2LjkpIi8+CjxyZWN0IHg9IjIyOS44IiB5PSI0MzguNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmMzZmNjIiIHRyYW5zZm9ybT0icm90YXRlKDE2IDIyOS44IDQzOC40KSIvPgo8cmVjdCB4PSIyNjIuNCIgeT0iNDQ0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgyNyAyNjIuNCA0NDQuOCkiLz4KPHJlY3QgeD0iNDg3LjUiIHk9IjQ3OS44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2YzNmY2MiIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ2IDQ4Ny41IDQ3OS44KSIvPgo8cmVjdCB4PSI0ODUuNSIgeT0iNDY1LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0ODUuNSA0NjUuNikiLz4KPHJlY3QgeD0iNjE0LjIiIHk9IjQ3MC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTQgNjE0LjIgNDcwLjkpIi8+CjxyZWN0IHg9IjM0Ni45IiB5PSI0NjUuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU0IDM0Ni45IDQ2NS4wKSIvPgo8cmVjdCB4PSI0NTAuMiIgeT0iNDM5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDggNDUwLjIgNDM5LjkpIi8+CjxyZWN0IHg9IjM1MS4zIiB5PSI0MzYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmMzZmNjIiIHRyYW5zZm9ybT0icm90YXRlKDM1IDM1MS4zIDQzNi4zKSIvPgo8cmVjdCB4PSI1MzMuOCIgeT0iNDYzLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgzOCA1MzMuOCA0NjMuMSkiLz4KPHJlY3QgeD0iNjYzLjIiIHk9IjQ0My4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjggNjYzLjIgNDQzLjEpIi8+CjxyZWN0IHg9IjM2NC4zIiB5PSI0NTcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmMzZmNjIiIHRyYW5zZm9ybT0icm90YXRlKDM2IDM2NC4zIDQ1Ny4xKSIvPgo8cmVjdCB4PSIzNDAuNCIgeT0iNDUzLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSAzNDAuNCA0NTMuOSkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjYwMy41IiB5PSIzMjIuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC02MSA2MDMuNSAzMjIuNCkiLz4KPHJlY3QgeD0iNTg2LjMiIHk9IjMyOS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU2IDU4Ni4zIDMyOS45KSIvPgo8cmVjdCB4PSI1NjcuOSIgeT0iMzU1LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjM2ZjYyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOSA1NjcuOSAzNTUuMCkiLz4KPHJlY3QgeD0iMzk2LjYiIHk9IjM0NS40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMSAzOTYuNiAzNDUuNCkiLz4KPHJlY3QgeD0iMzcxLjkiIHk9IjMyOS41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE4IDM3MS45IDMyOS41KSIvPgo8cmVjdCB4PSI1NDguMiIgeT0iMzI5LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg2MCA1NDguMiAzMjkuNCkiLz4KPHJlY3QgeD0iMzYxLjQiIHk9IjMzNy4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgMzYxLjQgMzM3LjApIi8+CjxyZWN0IHg9IjMxMS4xIiB5PSIzNDAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDIyIDMxMS4xIDM0MC42KSIvPgo8cmVjdCB4PSI0NzMuMCIgeT0iMzUyLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA0NzMuMCAzNTIuNykiLz4KPHJlY3QgeD0iNTQxLjQiIHk9IjM0OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDU0MS40IDM0OC43KSIvPgo8cmVjdCB4PSI2MDEuNSIgeT0iMzQ5LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjAgNjAxLjUgMzQ5LjcpIi8+CjxyZWN0IHg9IjQ2MS4yIiB5PSIzNDIuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NiA0NjEuMiAzNDIuMykiLz4KPHRleHQgeD0iNDUwIiB5PSIyNDYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPvCfjog8L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMjY2IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2YzNmY2MiIvPgo8cGF0aCBkPSJNNDUwIDI2NyBDNDI1IDIzNiwgNDc4IDIzOSwgNDUwIDI2N1oiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5GdW4gS2lkcyBQYXJ0eTwvdGV4dD4KPC9zdmc+" alt="Kue Fun Kids Party" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.8 <span>(57)</span></div>
+              <h3>Fun Kids Party</h3>
+              <p>Kue ceria dengan warna pastel dan dekorasi balon ulang tahun.</p>
+              <div class="product-meta"><span>Ø 18 cm</span><span>10–14 porsi</span></div>
+              <div class="product-bottom"><strong>Rp285.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="elegan" data-name="elegant floral bunga dewasa">
+            <div class="product-image">
+              <span class="badge">Favorit Ibu</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y4ZjNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U3ZDVlZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNkZWMzZDUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiOTgwYTgiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMjczLjEiIHk9IjQ2OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjQgMjczLjEgNDY4LjcpIi8+CjxyZWN0IHg9IjM0Ny4wIiB5PSI0NDcuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC01MiAzNDcuMCA0NDcuMykiLz4KPHJlY3QgeD0iMzYxLjMiIHk9IjQ2Ny44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzEgMzYxLjMgNDY3LjgpIi8+CjxyZWN0IHg9IjU3NC45IiB5PSI0NDAuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xMyA1NzQuOSA0NDAuNykiLz4KPHJlY3QgeD0iMzg2LjEiIHk9IjQ0Ny41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjIgMzg2LjEgNDQ3LjUpIi8+CjxyZWN0IHg9IjI5Ny41IiB5PSI0NjYuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDAgMjk3LjUgNDY2LjkpIi8+CjxyZWN0IHg9IjIyOS44IiB5PSI0MzguNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDE2IDIyOS44IDQzOC40KSIvPgo8cmVjdCB4PSIyNjIuNCIgeT0iNDQ0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgyNyAyNjIuNCA0NDQuOCkiLz4KPHJlY3QgeD0iNDg3LjUiIHk9IjQ3OS44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdjNGE3MiIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ2IDQ4Ny41IDQ3OS44KSIvPgo8cmVjdCB4PSI0ODUuNSIgeT0iNDY1LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0ODUuNSA0NjUuNikiLz4KPHJlY3QgeD0iNjE0LjIiIHk9IjQ3MC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTQgNjE0LjIgNDcwLjkpIi8+CjxyZWN0IHg9IjM0Ni45IiB5PSI0NjUuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU0IDM0Ni45IDQ2NS4wKSIvPgo8cmVjdCB4PSI0NTAuMiIgeT0iNDM5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDggNDUwLjIgNDM5LjkpIi8+CjxyZWN0IHg9IjM1MS4zIiB5PSI0MzYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDM1IDM1MS4zIDQzNi4zKSIvPgo8cmVjdCB4PSI1MzMuOCIgeT0iNDYzLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgzOCA1MzMuOCA0NjMuMSkiLz4KPHJlY3QgeD0iNjYzLjIiIHk9IjQ0My4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjggNjYzLjIgNDQzLjEpIi8+CjxyZWN0IHg9IjM2NC4zIiB5PSI0NTcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDM2IDM2NC4zIDQ1Ny4xKSIvPgo8cmVjdCB4PSIzNDAuNCIgeT0iNDUzLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSAzNDAuNCA0NTMuOSkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjYwMy41IiB5PSIzMjIuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC02MSA2MDMuNSAzMjIuNCkiLz4KPHJlY3QgeD0iNTg2LjMiIHk9IjMyOS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU2IDU4Ni4zIDMyOS45KSIvPgo8cmVjdCB4PSI1NjcuOSIgeT0iMzU1LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOSA1NjcuOSAzNTUuMCkiLz4KPHJlY3QgeD0iMzk2LjYiIHk9IjM0NS40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMSAzOTYuNiAzNDUuNCkiLz4KPHJlY3QgeD0iMzcxLjkiIHk9IjMyOS41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE4IDM3MS45IDMyOS41KSIvPgo8cmVjdCB4PSI1NDguMiIgeT0iMzI5LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg2MCA1NDguMiAzMjkuNCkiLz4KPHJlY3QgeD0iMzYxLjQiIHk9IjMzNy4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgMzYxLjQgMzM3LjApIi8+CjxyZWN0IHg9IjMxMS4xIiB5PSIzNDAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDIyIDMxMS4xIDM0MC42KSIvPgo8cmVjdCB4PSI0NzMuMCIgeT0iMzUyLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA0NzMuMCAzNTIuNykiLz4KPHJlY3QgeD0iNTQxLjQiIHk9IjM0OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDU0MS40IDM0OC43KSIvPgo8cmVjdCB4PSI2MDEuNSIgeT0iMzQ5LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjAgNjAxLjUgMzQ5LjcpIi8+CjxyZWN0IHg9IjQ2MS4yIiB5PSIzNDIuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NiA0NjEuMiAzNDIuMykiLz4KPHJlY3QgeD0iMzA1LjAiIHk9IjE3NCIgd2lkdGg9IjI5MCIgaGVpZ2h0PSI5MCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0zMDUuMCAyMTAgUTM0MC4wIDI0NCAzNzUuMCAyMTAgVDQ0NS4wIDIxMCBUNTE1LjAgMjEwIFQ1ODUuMCAyMTAgVDY1NS4wIDIxMCBUNzI1LjAgMjEwIFQ4MjUuMCAyMTAgVjE3NCBIMzA1LjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNDE5LjUiIHk9IjIzMi42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzYgNDE5LjUgMjMyLjYpIi8+CjxyZWN0IHg9IjQzOC4zIiB5PSIyMzEuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC00IDQzOC4zIDIzMS40KSIvPgo8cmVjdCB4PSI0NzkuNyIgeT0iMjI0LjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg3IDQ3OS43IDIyNC4yKSIvPgo8cmVjdCB4PSI0ODYuNyIgeT0iMjQxLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSg5IDQ4Ni43IDI0MS4xKSIvPgo8cmVjdCB4PSI1MTMuNiIgeT0iMjQxLjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtNiA1MTMuNiAyNDEuMikiLz4KPHJlY3QgeD0iNTM2LjYiIHk9IjIzOC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYzIDUzNi42IDIzOC41KSIvPgo8cmVjdCB4PSI0NDAuNSIgeT0iMjM1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1IDQ0MC41IDIzNS4zKSIvPgo8cmVjdCB4PSI1MTIuMiIgeT0iMjMwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgzNyA1MTIuMiAyMzAuNSkiLz4KPHJlY3QgeD0iNDE2LjUiIHk9IjIzMS42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTI2IDQxNi41IDIzMS42KSIvPgo8cmVjdCB4PSI0NjcuMyIgeT0iMjI5LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDkgNDY3LjMgMjI5LjEpIi8+CjxyZWN0IHg9IjQ1NS4xIiB5PSIyMjguMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0zMSA0NTUuMSAyMjguMikiLz4KPHJlY3QgeD0iNDA2LjkiIHk9IjIzMi4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDQwNi45IDIzMi4zKSIvPgo8dGV4dCB4PSI0NTAiIHk9IjE0OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI5MiI+8J+MuDwvdGV4dD4KPHJlY3QgeD0iNDI3IiB5PSIxNjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI1NCIgcng9IjIwIiBmaWxsPSIjN2M0YTcyIi8+CjxwYXRoIGQ9Ik00NTAgMTY5IEM0MjUgMTM4LCA0NzggMTQxLCA0NTAgMTY5WiIgZmlsbD0iI2ZmZDY2YiIvPgo8L2c+Cjx0ZXh0IHg9IjQ1MCIgeT0iNjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YTNjNGMiPkVsZWdhbnQgRmxvcmFsPC90ZXh0Pgo8L3N2Zz4=" alt="Kue Elegant Floral" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 5.0 <span>(102)</span></div>
+              <h3>Elegant Floral</h3>
+              <p>Kue bertingkat dengan sentuhan bunga dan warna lembut.</p>
+              <div class="product-meta"><span>2 tingkat</span><span>18–24 porsi</span></div>
+              <div class="product-bottom"><strong>Rp485.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="anak" data-name="football champion bola">
+            <div class="product-image">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2VhZmZlZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2M1ZWZkMiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiM1N2FkNjgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyODc4M2UiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNDU5LjkiIHk9IjQ3My43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMjMgNDU5LjkgNDczLjcpIi8+CjxyZWN0IHg9IjMwMy42IiB5PSI0NjguOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDY4IDMwMy42IDQ2OC44KSIvPgo8cmVjdCB4PSIyNzQuNiIgeT0iNDM2LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgyOCAyNzQuNiA0MzYuMykiLz4KPHJlY3QgeD0iMzM4LjYiIHk9IjQ1OS4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMTEgMzM4LjYgNDU5LjEpIi8+CjxyZWN0IHg9IjI4Ni45IiB5PSI0NjEuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAyODYuOSA0NjEuNSkiLz4KPHJlY3QgeD0iMjkyLjkiIHk9IjQ2OC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE3IDI5Mi45IDQ2OC45KSIvPgo8cmVjdCB4PSI0NjguMCIgeT0iNDc3LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTMgNDY4LjAgNDc3LjQpIi8+CjxyZWN0IHg9IjQwOS40IiB5PSI0NTkuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDUxIDQwOS40IDQ1OS4zKSIvPgo8cmVjdCB4PSI1MzIuMiIgeT0iNDU0LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg1OSA1MzIuMiA0NTQuNikiLz4KPHJlY3QgeD0iMjMzLjAiIHk9IjQ1Mi45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTU3IDIzMy4wIDQ1Mi45KSIvPgo8cmVjdCB4PSIyNDcuNiIgeT0iNDU3LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjkgMjQ3LjYgNDU3LjkpIi8+CjxyZWN0IHg9IjMzMi41IiB5PSI0NjEuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC03IDMzMi41IDQ2MS43KSIvPgo8cmVjdCB4PSIyNTEuMiIgeT0iNDM4LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgwIDI1MS4yIDQzOC4xKSIvPgo8cmVjdCB4PSI1NjEuNCIgeT0iNDc0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg2NiA1NjEuNCA0NzQuOCkiLz4KPHJlY3QgeD0iMzM3LjYiIHk9IjQ0OS44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMTkgMzM3LjYgNDQ5LjgpIi8+CjxyZWN0IHg9IjMwMS44IiB5PSI0MzkuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xIDMwMS44IDQzOS41KSIvPgo8cmVjdCB4PSIyMjkuNCIgeT0iNDcxLjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgxOSAyMjkuNCA0NzEuMikiLz4KPHJlY3QgeD0iNDM1LjIiIHk9IjQ0OC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU3IDQzNS4yIDQ0OC4xKSIvPgo8cmVjdCB4PSIyNTAuMCIgeT0iMjcyIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjEwNSIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0yNTAuMCAzMDggUTI4NS4wIDM0MiAzMjAuMCAzMDggVDM5MC4wIDMwOCBUNDYwLjAgMzA4IFQ1MzAuMCAzMDggVDYwMC4wIDMwOCBUNjcwLjAgMzA4IFQ3NzAuMCAzMDggVjI3MiBIMjUwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzQ0LjgiIHk9IjM0My44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTUgMzQ0LjggMzQzLjgpIi8+CjxyZWN0IHg9IjM1MC4zIiB5PSIzMzguMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU2IDM1MC4zIDMzOC4yKSIvPgo8cmVjdCB4PSI0NDMuMyIgeT0iMzM3LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMyA0NDMuMyAzMzcuMSkiLz4KPHJlY3QgeD0iMzY4LjgiIHk9IjM0NC44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTMgMzY4LjggMzQ0LjgpIi8+CjxyZWN0IHg9IjU3MC44IiB5PSIzNTMuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0xMCA1NzAuOCAzNTMuMikiLz4KPHJlY3QgeD0iMzYzLjMiIHk9IjM0Ni4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTkgMzYzLjMgMzQ2LjIpIi8+CjxyZWN0IHg9IjU1Mi41IiB5PSIzNTEuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU2IDU1Mi41IDM1MS40KSIvPgo8cmVjdCB4PSI1MjEuNCIgeT0iMzMwLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNyA1MjEuNCAzMzAuNykiLz4KPHJlY3QgeD0iMzU3LjciIHk9IjM0Ni4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjcgMzU3LjcgMzQ2LjApIi8+CjxyZWN0IHg9IjQ4MC44IiB5PSIzMzkuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xIDQ4MC44IDMzOS40KSIvPgo8cmVjdCB4PSI0NjcuMSIgeT0iMzMxLjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1OCA0NjcuMSAzMzEuMykiLz4KPHJlY3QgeD0iNDQ4LjciIHk9IjM0OC4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTI5IDQ0OC43IDM0OC4yKSIvPgo8dGV4dCB4PSI0NTAiIHk9IjI0NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI5MiI+4pq9PC90ZXh0Pgo8cmVjdCB4PSI0MjciIHk9IjI2NiIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjU0IiByeD0iMjAiIGZpbGw9IiNmZmZmZmYiLz4KPHBhdGggZD0iTTQ1MCAyNjcgQzQyNSAyMzYsIDQ3OCAyMzksIDQ1MCAyNjdaIiBmaWxsPSIjZmZkNjZiIi8+CjwvZz4KPHRleHQgeD0iNDUwIiB5PSI2MDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIzNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzVhM2M0YyI+Rm9vdGJhbGwgQ2hhbXBpb248L3RleHQ+Cjwvc3ZnPg==" alt="Kue Football Champion" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.8 <span>(44)</span></div>
+              <h3>Football Champion</h3>
+              <p>Tema sepak bola dengan nama, nomor, dan warna tim pilihan.</p>
+              <div class="product-meta"><span>Ø 18 cm</span><span>10–14 porsi</span></div>
+              <div class="product-bottom"><strong>Rp305.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="anak" data-name="princess castle putri anak">
+            <div class="product-image">
+              <span class="badge lavender">Princess</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjBmYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZDBlZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNmNTliZDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkOTVjYTYiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNjU5LjQiIHk9IjQzNS42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTYxIDY1OS40IDQzNS42KSIvPgo8cmVjdCB4PSI2MzUuOSIgeT0iNDQ2LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTYgNjM1LjkgNDQ2LjUpIi8+CjxyZWN0IHg9IjYxMC44IiB5PSI0ODMuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQ2NmQiIHRyYW5zZm9ybT0icm90YXRlKC05IDYxMC44IDQ4My4wKSIvPgo8cmVjdCB4PSIzNzcuMSIgeT0iNDY5LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxIDM3Ny4xIDQ2OS4wKSIvPgo8cmVjdCB4PSIzNDMuNSIgeT0iNDQ2LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTggMzQzLjUgNDQ2LjApIi8+CjxyZWN0IHg9IjU4My45IiB5PSI0NDUuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDYwIDU4My45IDQ0NS43KSIvPgo8cmVjdCB4PSIzMjkuMSIgeT0iNDU2LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgzNyAzMjkuMSA0NTYuOSkiLz4KPHJlY3QgeD0iMjYwLjUiIHk9IjQ2Mi4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjIgMjYwLjUgNDYyLjEpIi8+CjxyZWN0IHg9IjQ4MS4zIiB5PSI0NzkuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDQ4MS4zIDQ3OS43KSIvPgo8cmVjdCB4PSI1NzQuNiIgeT0iNDczLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNTQgNTc0LjYgNDczLjkpIi8+CjxyZWN0IHg9IjY1Ni42IiB5PSI0NzUuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0yMCA2NTYuNiA0NzUuMykiLz4KPHJlY3QgeD0iNDY1LjMiIHk9IjQ2NC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTY2IDQ2NS4zIDQ2NC41KSIvPgo8cmVjdCB4PSI0NjMuNSIgeT0iNDQyLjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkNjZkIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgNDYzLjUgNDQyLjMpIi8+CjxyZWN0IHg9IjQwMi45IiB5PSI0MzguNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDUgNDAyLjkgNDM4LjUpIi8+CjxyZWN0IHg9IjY0MC4yIiB5PSI0NDYuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDY5IDY0MC4yIDQ0Ni4yKSIvPgo8cmVjdCB4PSIyNjAuMiIgeT0iNDQ5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjggMjYwLjIgNDQ5LjkpIi8+CjxyZWN0IHg9IjM5OS4xIiB5PSI0NTcuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQ2NmQiIHRyYW5zZm9ybT0icm90YXRlKDQzIDM5OS4xIDQ1Ny45KSIvPgo8cmVjdCB4PSI1NjUuOCIgeT0iNDc1LjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMSA1NjUuOCA0NzUuMikiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjQwNC4zIiB5PSIzMzcuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDM2IDQwNC4zIDMzNy45KSIvPgo8cmVjdCB4PSI0MzIuNCIgeT0iMzM1LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNCA0MzIuNCAzMzUuNSkiLz4KPHJlY3QgeD0iNDk0LjUiIHk9IjMyMi4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNyA0OTQuNSAzMjIuMykiLz4KPHJlY3QgeD0iNTA1LjAiIHk9IjM1My40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDY2ZCIgdHJhbnNmb3JtPSJyb3RhdGUoOSA1MDUuMCAzNTMuNCkiLz4KPHJlY3QgeD0iNTQ1LjQiIHk9IjM1My42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDY2ZCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYgNTQ1LjQgMzUzLjYpIi8+CjxyZWN0IHg9IjU3OS45IiB5PSIzNDguNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC02MyA1NzkuOSAzNDguNykiLz4KPHJlY3QgeD0iNDM1LjciIHk9IjM0Mi43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNSA0MzUuNyAzNDIuNykiLz4KPHJlY3QgeD0iNTQzLjMiIHk9IjMzMy45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDY2ZCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgNTQzLjMgMzMzLjkpIi8+CjxyZWN0IHg9IjM5OS44IiB5PSIzMzYuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0yNiAzOTkuOCAzMzYuMCkiLz4KPHJlY3QgeD0iNDc2LjAiIHk9IjMzMS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDY2ZCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ5IDQ3Ni4wIDMzMS4zKSIvPgo8cmVjdCB4PSI0NTcuNyIgeT0iMzI5LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzEgNDU3LjcgMzI5LjcpIi8+CjxyZWN0IHg9IjM4NS40IiB5PSIzMzcuMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC01NCAzODUuNCAzMzcuMikiLz4KPHJlY3QgeD0iMzA1LjAiIHk9IjE3NCIgd2lkdGg9IjI5MCIgaGVpZ2h0PSI5MCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0zMDUuMCAyMTAgUTM0MC4wIDI0NCAzNzUuMCAyMTAgVDQ0NS4wIDIxMCBUNTE1LjAgMjEwIFQ1ODUuMCAyMTAgVDY1NS4wIDIxMCBUNzI1LjAgMjEwIFQ4MjUuMCAyMTAgVjE3NCBIMzA1LjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNDU0LjgiIHk9IjIzOC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMjMgNDU0LjggMjM4LjUpIi8+CjxyZWN0IHg9IjM3OC40IiB5PSIyMzYuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDY4IDM3OC40IDIzNi43KSIvPgo8cmVjdCB4PSIzNjQuMiIgeT0iMjI0LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgyOCAzNjQuMiAyMjQuNSkiLz4KPHJlY3QgeD0iMzk1LjUiIHk9IjIzMy4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMTEgMzk1LjUgMjMzLjApIi8+CjxyZWN0IHg9IjM3MC4zIiB5PSIyMzMuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAzNzAuMyAyMzMuOSkiLz4KPHJlY3QgeD0iMzczLjIiIHk9IjIzNi43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE3IDM3My4yIDIzNi43KSIvPgo8cmVjdCB4PSI0NTguOCIgeT0iMjM5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTMgNDU4LjggMjM5LjkpIi8+CjxyZWN0IHg9IjQzMC4xIiB5PSIyMzMuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDUxIDQzMC4xIDIzMy4xKSIvPgo8cmVjdCB4PSI0OTAuMiIgeT0iMjMxLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg1OSA0OTAuMiAyMzEuNCkiLz4KPHJlY3QgeD0iMzQzLjkiIHk9IjIzMC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTU3IDM0My45IDIzMC43KSIvPgo8cmVjdCB4PSIzNTEuMSIgeT0iMjMyLjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjkgMzUxLjEgMjMyLjYpIi8+CjxyZWN0IHg9IjM5Mi42IiB5PSIyMzQuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC03IDM5Mi42IDIzNC4wKSIvPgo8dGV4dCB4PSI0NTAiIHk9IjE0OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI5MiI+8J+RkTwvdGV4dD4KPHJlY3QgeD0iNDI3IiB5PSIxNjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI1NCIgcng9IjIwIiBmaWxsPSIjZmZkNjZkIi8+CjxwYXRoIGQ9Ik00NTAgMTY5IEM0MjUgMTM4LCA0NzggMTQxLCA0NTAgMTY5WiIgZmlsbD0iI2ZmZDY2YiIvPgo8L2c+Cjx0ZXh0IHg9IjQ1MCIgeT0iNjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YTNjNGMiPlByaW5jZXNzIENhc3RsZTwvdGV4dD4KPC9zdmc+" alt="Kue Princess Castle" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.9 <span>(76)</span></div>
+              <h3>Princess Castle</h3>
+              <p>Kue istana bertingkat dengan mahkota dan warna pilihan.</p>
+              <div class="product-meta"><span>2 tingkat</span><span>18–24 porsi</span></div>
+              <div class="product-bottom"><strong>Rp525.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="cokelat" data-name="tiramisu classic kopi dewasa">
+            <div class="product-image">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjhlZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VhZDljMCIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNiYThiNjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3ZDU2MzgiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzg3LjciIHk9IjQ1OC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzYgMzg3LjcgNDU4LjEpIi8+CjxyZWN0IHg9IjQyNi4wIiB5PSI0NTQuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC00IDQyNi4wIDQ1NC43KSIvPgo8cmVjdCB4PSI1MTAuNyIgeT0iNDM1LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg3IDUxMC43IDQzNS41KSIvPgo8cmVjdCB4PSI1MjUuMCIgeT0iNDgwLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjJjODc5IiB0cmFuc2Zvcm09InJvdGF0ZSg5IDUyNS4wIDQ4MC43KSIvPgo8cmVjdCB4PSI1ODAuMiIgeT0iNDgwLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjJjODc5IiB0cmFuc2Zvcm09InJvdGF0ZSgtNiA1ODAuMiA0ODAuOSkiLz4KPHJlY3QgeD0iNjI3LjEiIHk9IjQ3My44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYzIDYyNy4xIDQ3My44KSIvPgo8cmVjdCB4PSI0MzAuNiIgeT0iNDY1LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1IDQzMC42IDQ2NS4xKSIvPgo8cmVjdCB4PSI1NzcuMiIgeT0iNDUyLjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjJjODc5IiB0cmFuc2Zvcm09InJvdGF0ZSgzNyA1NzcuMiA0NTIuNCkiLz4KPHJlY3QgeD0iMzgxLjUiIHk9IjQ1NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTI2IDM4MS41IDQ1NS4zKSIvPgo8cmVjdCB4PSI0ODUuNCIgeT0iNDQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjJjODc5IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDkgNDg1LjQgNDQ4LjYpIi8+CjxyZWN0IHg9IjQ2MC41IiB5PSI0NDYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0zMSA0NjAuNSA0NDYuMykiLz4KPHJlY3QgeD0iMzYxLjkiIHk9IjQ1Ny4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDM2MS45IDQ1Ny4xKSIvPgo8cmVjdCB4PSI1MzkuNyIgeT0iNDY5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjcgNTM5LjcgNDY5LjkpIi8+CjxyZWN0IHg9IjYwNC4xIiB5PSI0NTguNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmMmM4NzkiIHRyYW5zZm9ybT0icm90YXRlKDUxIDYwNC4xIDQ1OC42KSIvPgo8cmVjdCB4PSI0MjkuNCIgeT0iNDY0LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZjJjODc5IiB0cmFuc2Zvcm09InJvdGF0ZSg1NyA0MjkuNCA0NjQuNCkiLz4KPHJlY3QgeD0iNjYwLjYiIHk9IjQ2OC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMzMgNjYwLjYgNDY4LjkpIi8+CjxyZWN0IHg9IjIzOS45IiB5PSI0MzcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDMyIDIzOS45IDQzNy4xKSIvPgo8cmVjdCB4PSI0MzkuOSIgeT0iNDY3LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTIgNDM5LjkgNDY3LjEpIi8+CjxyZWN0IHg9IjI1MC4wIiB5PSIyNzIiIHdpZHRoPSI0MDAiIGhlaWdodD0iMTA1IiByeD0iMzgiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTI1MC4wIDMwOCBRMjg1LjAgMzQyIDMyMC4wIDMwOCBUMzkwLjAgMzA4IFQ0NjAuMCAzMDggVDUzMC4wIDMwOCBUNjAwLjAgMzA4IFQ2NzAuMCAzMDggVDc3MC4wIDMwOCBWMjcyIEgyNTAuMFoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44OCIvPgo8cmVjdCB4PSI0NTcuMyIgeT0iMzQ4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0NTcuMyAzNDguNikiLz4KPHJlY3QgeD0iMzQyLjYiIHk9IjM0NS4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjggMzQyLjYgMzQ1LjMpIi8+CjxyZWN0IHg9IjMyMS40IiB5PSIzMjIuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDI4IDMyMS40IDMyMi45KSIvPgo8cmVjdCB4PSIzNjguMyIgeT0iMzM4LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxMSAzNjguMyAzMzguNikiLz4KPHJlY3QgeD0iMzMwLjQiIHk9IjM0MC4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDMzMC40IDM0MC4yKSIvPgo8cmVjdCB4PSIzMzQuOCIgeT0iMzQ1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTcgMzM0LjggMzQ1LjMpIi8+CjxyZWN0IHg9IjQ2My4yIiB5PSIzNTEuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC01MyA0NjMuMiAzNTEuMSkiLz4KPHJlY3QgeD0iNDIwLjIiIHk9IjMzOC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTEgNDIwLjIgMzM4LjcpIi8+CjxyZWN0IHg9IjUxMC4zIiB5PSIzMzUuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU5IDUxMC4zIDMzNS41KSIvPgo8cmVjdCB4PSIyOTAuOSIgeT0iMzM0LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNTcgMjkwLjkgMzM0LjMpIi8+CjxyZWN0IHg9IjMwMS42IiB5PSIzMzcuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC02OSAzMDEuNiAzMzcuNykiLz4KPHJlY3QgeD0iMzYzLjkiIHk9IjM0MC40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTcgMzYzLjkgMzQwLjQpIi8+Cjx0ZXh0IHg9IjQ1MCIgeT0iMjQ2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjkyIj7imJU8L3RleHQ+CjxyZWN0IHg9IjQyNyIgeT0iMjY2IiB3aWR0aD0iNDYiIGhlaWdodD0iNTQiIHJ4PSIyMCIgZmlsbD0iI2YyYzg3OSIvPgo8cGF0aCBkPSJNNDUwIDI2NyBDNDI1IDIzNiwgNDc4IDIzOSwgNDUwIDI2N1oiIGZpbGw9IiNmZmQ2NmIiLz4KPC9nPgo8dGV4dCB4PSI0NTAiIHk9IjYwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWEzYzRjIj5UaXJhbWlzdSBDbGFzc2ljPC90ZXh0Pgo8L3N2Zz4=" alt="Kue Tiramisu Classic" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 4.7 <span>(35)</span></div>
+              <h3>Tiramisu Classic</h3>
+              <p>Rasa kopi lembut, mascarpone creamy, dan cocoa premium.</p>
+              <div class="product-meta"><span>Ø 16 cm</span><span>8–10 porsi</span></div>
+              <div class="product-bottom"><strong>Rp255.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="custom" data-name="custom celebration bebas desain">
+            <div class="product-image">
+              <span class="badge custom">Bebas Desain</span>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZjdlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZTFiNiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNmZmI2NmUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmMDc4NGIiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMzA2LjYiIHk9IjQ2Ni43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTUgMzA2LjYgNDY2LjcpIi8+CjxyZWN0IHg9IjMxNC4xIiB5PSI0NTguNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU2IDMxNC4xIDQ1OC41KSIvPgo8cmVjdCB4PSI0NDAuOSIgeT0iNDU3LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMyA0NDAuOSA0NTcuMCkiLz4KPHJlY3QgeD0iMzM5LjIiIHk9IjQ2OC4yIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMTMgMzM5LjIgNDY4LjIpIi8+CjxyZWN0IHg9IjYxNC43IiB5PSI0ODAuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0xMCA2MTQuNyA0ODAuMykiLz4KPHJlY3QgeD0iMzMxLjgiIHk9IjQ3MC4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTkgMzMxLjggNDcwLjMpIi8+CjxyZWN0IHg9IjU4OS43IiB5PSI0NzcuOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDU2IDU4OS43IDQ3Ny44KSIvPgo8cmVjdCB4PSI1NDcuMyIgeT0iNDQ3LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNyA1NDcuMyA0NDcuNykiLz4KPHJlY3QgeD0iMzI0LjIiIHk9IjQ2OS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjcgMzI0LjIgNDY5LjkpIi8+CjxyZWN0IHg9IjQ5Mi4xIiB5PSI0NjAuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xIDQ5Mi4xIDQ2MC4zKSIvPgo8cmVjdCB4PSI0NzMuMyIgeT0iNDQ4LjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1OCA0NzMuMyA0NDguNSkiLz4KPHJlY3QgeD0iNDQ4LjIiIHk9IjQ3My4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTI5IDQ0OC4yIDQ3My4xKSIvPgo8cmVjdCB4PSIzMTguMSIgeT0iNDY3LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg0MSAzMTguMSA0NjcuOSkiLz4KPHJlY3QgeD0iNDA4LjIiIHk9IjQ1OC4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDQwOC4yIDQ1OC4xKSIvPgo8cmVjdCB4PSI0ODkuOCIgeT0iNDYwLjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNiA0ODkuOCA0NjAuNikiLz4KPHJlY3QgeD0iMjY0LjkiIHk9IjQ0Mi4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTMyIDI2NC45IDQ0Mi4xKSIvPgo8cmVjdCB4PSIyNjAuNSIgeT0iNDY2LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg2OSAyNjAuNSA0NjYuMSkiLz4KPHJlY3QgeD0iMzE2LjciIHk9IjQ3OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzcwNDViOCIgdHJhbnNmb3JtPSJyb3RhdGUoMzAgMzE2LjcgNDc4LjcpIi8+CjxyZWN0IHg9IjI1MC4wIiB5PSIyNzIiIHdpZHRoPSI0MDAiIGhlaWdodD0iMTA1IiByeD0iMzgiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTI1MC4wIDMwOCBRMjg1LjAgMzQyIDMyMC4wIDMwOCBUMzkwLjAgMzA4IFQ0NjAuMCAzMDggVDUzMC4wIDMwOCBUNjAwLjAgMzA4IFQ2NzAuMCAzMDggVDc3MC4wIDMwOCBWMjcyIEgyNTAuMFoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44OCIvPgo8cmVjdCB4PSI1MDguNSIgeT0iMzQ3LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjNzA0NWI4IiB0cmFuc2Zvcm09InJvdGF0ZSg2MyA1MDguNSAzNDcuOSkiLz4KPHJlY3QgeD0iNDUzLjgiIHk9IjMzNS4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNjUgNDUzLjggMzM1LjApIi8+CjxyZWN0IHg9IjQ3OC4wIiB5PSIzNDEuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC00MyA0NzguMCAzNDEuNikiLz4KPHJlY3QgeD0iNDIwLjkiIHk9IjM1My45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTQzIDQyMC45IDM1My45KSIvPgo8cmVjdCB4PSI1ODEuMSIgeT0iMzIyLjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjNzA0NWI4IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTkgNTgxLjEgMzIyLjgpIi8+CjxyZWN0IHg9IjU4OC43IiB5PSIzMjUuOCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDQ2IDU4OC43IDMyNS44KSIvPgo8cmVjdCB4PSI1NzAuOCIgeT0iMzI0LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgNTcwLjggMzI0LjQpIi8+CjxyZWN0IHg9IjI5MC41IiB5PSIzNDEuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDM4IDI5MC41IDM0MS4xKSIvPgo8cmVjdCB4PSI0MzAuMyIgeT0iMzU0LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1OCA0MzAuMyAzNTQuNikiLz4KPHJlY3QgeD0iNTQ2LjMiIHk9IjM1My41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzcwNDViOCIgdHJhbnNmb3JtPSJyb3RhdGUoLTExIDU0Ni4zIDM1My41KSIvPgo8cmVjdCB4PSI1NDkuNSIgeT0iMzM0LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNTQ5LjUgMzM0LjkpIi8+CjxyZWN0IHg9IjQ5MS43IiB5PSIzMjUuNSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3MDQ1YjgiIHRyYW5zZm9ybT0icm90YXRlKDQ3IDQ5MS43IDMyNS41KSIvPgo8cmVjdCB4PSIzMDUuMCIgeT0iMTc0IiB3aWR0aD0iMjkwIiBoZWlnaHQ9IjkwIiByeD0iMzgiIGZpbGw9InVybCgjY2FrZSkiLz4KPHBhdGggZD0iTTMwNS4wIDIxMCBRMzQwLjAgMjQ0IDM3NS4wIDIxMCBUNDQ1LjAgMjEwIFQ1MTUuMCAyMTAgVDU4NS4wIDIxMCBUNjU1LjAgMjEwIFQ3MjUuMCAyMTAgVDgyNS4wIDIxMCBWMTc0IEgzMDUuMFoiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii44OCIvPgo8cmVjdCB4PSI1MzkuMiIgeT0iMjM2LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzIgNTM5LjIgMjM2LjQpIi8+CjxyZWN0IHg9IjQ4OC4zIiB5PSIyMzkuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC00NSA0ODguMyAyMzkuMykiLz4KPHJlY3QgeD0iNDY2LjAiIHk9IjIyNy4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzUgNDY2LjAgMjI3LjApIi8+CjxyZWN0IHg9IjU1OC42IiB5PSIyMjUuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDExIDU1OC42IDIyNS45KSIvPgo8cmVjdCB4PSI1NDkuMCIgeT0iMjMyLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTcgNTQ5LjAgMjMyLjEpIi8+CjxyZWN0IHg9IjQwOS43IiB5PSIyNDAuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDE1IDQwOS43IDI0MC40KSIvPgo8cmVjdCB4PSI0MzQuMCIgeT0iMjM1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg1NSA0MzQuMCAyMzUuMykiLz4KPHJlY3QgeD0iMzU3LjkiIHk9IjIzNC4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTYyIDM1Ny45IDIzNC4zKSIvPgo8cmVjdCB4PSIzNjAuOCIgeT0iMjI3LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgyIDM2MC44IDIyNy40KSIvPgo8cmVjdCB4PSI0OTEuOSIgeT0iMjI2LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjNzA0NWI4IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDAgNDkxLjkgMjI2LjkpIi8+CjxyZWN0IHg9IjM5OC45IiB5PSIyMjguMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC0xNCAzOTguOSAyMjguMikiLz4KPHJlY3QgeD0iMzUyLjMiIHk9IjIzOC40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoNiAzNTIuMyAyMzguNCkiLz4KPHRleHQgeD0iNDUwIiB5PSIxNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOTIiPuKcqDwvdGV4dD4KPHJlY3QgeD0iNDI3IiB5PSIxNjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI1NCIgcng9IjIwIiBmaWxsPSIjNzA0NWI4Ii8+CjxwYXRoIGQ9Ik00NTAgMTY5IEM0MjUgMTM4LCA0NzggMTQxLCA0NTAgMTY5WiIgZmlsbD0iI2ZmZDY2YiIvPgo8L2c+Cjx0ZXh0IHg9IjQ1MCIgeT0iNjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YTNjNGMiPkN1c3RvbSBDZWxlYnJhdGlvbjwvdGV4dD4KPC9zdmc+" alt="Kue Custom Celebration" />
+              <button class="wish" aria-label="Simpan favorit">♡</button>
+            </div>
+            <div class="product-body">
+              <div class="rating">★ 5.0 <span>(129)</span></div>
+              <h3>Custom Celebration</h3>
+              <p>Kirim referensi desain dan kami bantu wujudkan versi terbaiknya.</p>
+              <div class="product-meta"><span>Ukuran bebas</span><span>Mulai 6 porsi</span></div>
+              <div class="product-bottom"><strong>Mulai Rp250.000</strong><button class="add-cart">+ Keranjang</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <span>🍰</span>
+          <h3>Kue belum ditemukan</h3>
+          <p>Coba gunakan kata kunci lain atau pilih kategori “Semua”.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad promo-section" id="custom">
+      <div class="container promo-grid">
+        <div class="promo-card main-promo">
+          <div>
+            <span class="eyebrow light">Buat desainmu sendiri</span>
+            <h2>Punya referensi kue dari internet? Kirim saja kepada kami.</h2>
+            <p>
+              Tim dekorasi kami akan menyesuaikan desain dengan ukuran, anggaran, rasa,
+              dan tanggal acara. Kamu juga dapat menambahkan nama, umur, ucapan, foto,
+              atau topper khusus.
+            </p>
+            <a class="btn white" href="#kontak">Konsultasi Custom Cake</a>
+          </div>
+          <div class="promo-steps">
+            <span><b>1</b> Kirim referensi</span>
+            <span><b>2</b> Pilih ukuran & rasa</span>
+            <span><b>3</b> Konfirmasi desain</span>
+            <span><b>4</b> Kue dibuat fresh</span>
+          </div>
+        </div>
+
+        <div class="promo-side">
+          <article>
+            <span>🎁</span>
+            <h3>Paket Ulang Tahun</h3>
+            <p>Kue, cupcake, topper, lilin, dan kartu ucapan dalam satu paket.</p>
+            <a href="#kontak">Lihat paket →</a>
+          </article>
+          <article>
+            <span>🏢</span>
+            <h3>Pesanan Kantor</h3>
+            <p>Tersedia invoice, pesanan banyak, dan pengiriman terjadwal.</p>
+            <a href="#kontak">Hubungi sales →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad flavor-section">
+      <div class="container">
+        <div class="section-heading split">
+          <div>
+            <span class="eyebrow">Pilih rasa favorit</span>
+            <h2>Rasa enak untuk semua selera</h2>
+          </div>
+          <p>Semua kue dibuat dengan bahan berkualitas dan tingkat kemanisan yang seimbang.</p>
+        </div>
+
+        <div class="flavor-grid">
+          <article><span>🍦</span><h3>Vanilla Cream</h3><p>Ringan, lembut, cocok untuk anak-anak.</p></article>
+          <article><span>🍫</span><h3>Belgian Chocolate</h3><p>Cokelat pekat dengan ganache premium.</p></article>
+          <article><span>🍓</span><h3>Strawberry Milk</h3><p>Segar, manis, dan harum buah.</p></article>
+          <article><span>🧀</span><h3>Red Velvet Cheese</h3><p>Lembut dengan cream cheese gurih.</p></article>
+          <article><span>☕</span><h3>Mocha Coffee</h3><p>Aroma kopi halus untuk pencinta rasa dewasa.</p></article>
+          <article><span>🍊</span><h3>Orange Yogurt</h3><p>Asam-manis segar dan tidak enek.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad process-section" id="cara-pesan">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Pemesanan mudah</span>
+          <h2>Empat langkah menuju kue impianmu</h2>
+        </div>
+
+        <div class="process-grid">
+          <article><span>01</span><div class="process-icon">🔎</div><h3>Pilih desain</h3><p>Cari dari katalog atau kirim referensi desain sendiri.</p></article>
+          <article><span>02</span><div class="process-icon">📝</div><h3>Isi detail</h3><p>Tentukan ukuran, rasa, warna, tulisan, dan tanggal acara.</p></article>
+          <article><span>03</span><div class="process-icon">💳</div><h3>Konfirmasi pesanan</h3><p>Lakukan pembayaran setelah desain dan harga disetujui.</p></article>
+          <article><span>04</span><div class="process-icon">🎉</div><h3>Terima kue</h3><p>Ambil di toko atau pilih pengiriman pada waktu yang ditentukan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad about-section" id="tentang">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNjUwIiB2aWV3Qm94PSIwIDAgOTAwIDY1MCI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y4ZjNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U3ZDVlZiIvPjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iY2FrZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIHN0b3AtY29sb3I9IiNkZWMzZDUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiOTgwYTgiLz48L2xpbmVhckdyYWRpZW50Pgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE2MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIyMCIgc3RkRGV2aWF0aW9uPSIxOCIgZmxvb2Qtb3BhY2l0eT0iLjIiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjY1MCIgcng9IjQwIiBmaWxsPSJ1cmwoI2JnKSIvPgo8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMTAiIHI9IjcyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMTgiLz4KPGNpcmNsZSBjeD0iODAwIiBjeT0iMTYwIiByPSI5NSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjEyIi8+CjxwYXRoIGQ9Ik0wIDU0MCBDMTgwIDQ4MCwgMjYwIDYxMCwgNDQwIDU0MCBTNzYwIDUwMCwgOTAwIDU2MCBWNjUwIEgwWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI2Ii8+CjxlbGxpcHNlIGN4PSI0NTAiIGN5PSI1NDAiIHJ4PSIzMDAiIHJ5PSI1MiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEyIi8+CjxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KPHJlY3QgeD0iMjUwIiB5PSI1MDUiIHdpZHRoPSI0MDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iI2VhZDljOSIvPgo8cmVjdCB4PSIxOTAuMCIgeT0iMzg1IiB3aWR0aD0iNTIwIiBoZWlnaHQ9IjEyMCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0xOTAuMCA0MjEgUTIyNS4wIDQ1NSAyNjAuMCA0MjEgVDMzMC4wIDQyMSBUNDAwLjAgNDIxIFQ0NzAuMCA0MjEgVDU0MC4wIDQyMSBUNjEwLjAgNDIxIFQ3MTAuMCA0MjEgVjM4NSBIMTkwLjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iMjczLjEiIHk9IjQ2OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjQgMjczLjEgNDY4LjcpIi8+CjxyZWN0IHg9IjM0Ny4wIiB5PSI0NDcuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKC01MiAzNDcuMCA0NDcuMykiLz4KPHJlY3QgeD0iMzYxLjMiIHk9IjQ2Ny44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzEgMzYxLjMgNDY3LjgpIi8+CjxyZWN0IHg9IjU3NC45IiB5PSI0NDAuNyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0xMyA1NzQuOSA0NDAuNykiLz4KPHJlY3QgeD0iMzg2LjEiIHk9IjQ0Ny41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNjIgMzg2LjEgNDQ3LjUpIi8+CjxyZWN0IHg9IjI5Ny41IiB5PSI0NjYuOSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKDAgMjk3LjUgNDY2LjkpIi8+CjxyZWN0IHg9IjIyOS44IiB5PSI0MzguNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDE2IDIyOS44IDQzOC40KSIvPgo8cmVjdCB4PSIyNjIuNCIgeT0iNDQ0LjgiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgyNyAyNjIuNCA0NDQuOCkiLz4KPHJlY3QgeD0iNDg3LjUiIHk9IjQ3OS44IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdjNGE3MiIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ2IDQ4Ny41IDQ3OS44KSIvPgo8cmVjdCB4PSI0ODUuNSIgeT0iNDY1LjYiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgyMyA0ODUuNSA0NjUuNikiLz4KPHJlY3QgeD0iNjE0LjIiIHk9IjQ3MC45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoNTQgNjE0LjIgNDcwLjkpIi8+CjxyZWN0IHg9IjM0Ni45IiB5PSI0NjUuMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKDU0IDM0Ni45IDQ2NS4wKSIvPgo8cmVjdCB4PSI0NTAuMiIgeT0iNDM5LjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDggNDUwLjIgNDM5LjkpIi8+CjxyZWN0IHg9IjM1MS4zIiB5PSI0MzYuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDM1IDM1MS4zIDQzNi4zKSIvPgo8cmVjdCB4PSI1MzMuOCIgeT0iNDYzLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSgzOCA1MzMuOCA0NjMuMSkiLz4KPHJlY3QgeD0iNjYzLjIiIHk9IjQ0My4xIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMjggNjYzLjIgNDQzLjEpIi8+CjxyZWN0IHg9IjM2NC4zIiB5PSI0NTcuMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3YzRhNzIiIHRyYW5zZm9ybT0icm90YXRlKDM2IDM2NC4zIDQ1Ny4xKSIvPgo8cmVjdCB4PSIzNDAuNCIgeT0iNDUzLjkiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSAzNDAuNCA0NTMuOSkiLz4KPHJlY3QgeD0iMjUwLjAiIHk9IjI3MiIgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxMDUiIHJ4PSIzOCIgZmlsbD0idXJsKCNjYWtlKSIvPgo8cGF0aCBkPSJNMjUwLjAgMzA4IFEyODUuMCAzNDIgMzIwLjAgMzA4IFQzOTAuMCAzMDggVDQ2MC4wIDMwOCBUNTMwLjAgMzA4IFQ2MDAuMCAzMDggVDY3MC4wIDMwOCBUNzcwLjAgMzA4IFYyNzIgSDI1MC4wWiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjg4Ii8+CjxyZWN0IHg9IjYwMy41IiB5PSIzMjIuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC02MSA2MDMuNSAzMjIuNCkiLz4KPHJlY3QgeD0iNTg2LjMiIHk9IjMyOS45IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU2IDU4Ni4zIDMyOS45KSIvPgo8cmVjdCB4PSI1NjcuOSIgeT0iMzU1LjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOSA1NjcuOSAzNTUuMCkiLz4KPHJlY3QgeD0iMzk2LjYiIHk9IjM0NS40IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMSAzOTYuNiAzNDUuNCkiLz4KPHJlY3QgeD0iMzcxLjkiIHk9IjMyOS41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE4IDM3MS45IDMyOS41KSIvPgo8cmVjdCB4PSI1NDguMiIgeT0iMzI5LjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg2MCA1NDguMiAzMjkuNCkiLz4KPHJlY3QgeD0iMzYxLjQiIHk9IjMzNy4wIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoMzcgMzYxLjQgMzM3LjApIi8+CjxyZWN0IHg9IjMxMS4xIiB5PSIzNDAuNiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiM3ZWQ3YzQiIHRyYW5zZm9ybT0icm90YXRlKDIyIDMxMS4xIDM0MC42KSIvPgo8cmVjdCB4PSI0NzMuMCIgeT0iMzUyLjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2VkN2M0IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA0NzMuMCAzNTIuNykiLz4KPHJlY3QgeD0iNTQxLjQiIHk9IjM0OC43IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDU0MS40IDM0OC43KSIvPgo8cmVjdCB4PSI2MDEuNSIgeT0iMzQ5LjciIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjAgNjAxLjUgMzQ5LjcpIi8+CjxyZWN0IHg9IjQ2MS4yIiB5PSIzNDIuMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC02NiA0NjEuMiAzNDIuMykiLz4KPHJlY3QgeD0iMzA1LjAiIHk9IjE3NCIgd2lkdGg9IjI5MCIgaGVpZ2h0PSI5MCIgcng9IjM4IiBmaWxsPSJ1cmwoI2Nha2UpIi8+CjxwYXRoIGQ9Ik0zMDUuMCAyMTAgUTM0MC4wIDI0NCAzNzUuMCAyMTAgVDQ0NS4wIDIxMCBUNTE1LjAgMjEwIFQ1ODUuMCAyMTAgVDY1NS4wIDIxMCBUNzI1LjAgMjEwIFQ4MjUuMCAyMTAgVjE3NCBIMzA1LjBaIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuODgiLz4KPHJlY3QgeD0iNDE5LjUiIHk9IjIzMi42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoMzYgNDE5LjUgMjMyLjYpIi8+CjxyZWN0IHg9IjQzOC4zIiB5PSIyMzEuNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmZmZmYiIHRyYW5zZm9ybT0icm90YXRlKC00IDQzOC4zIDIzMS40KSIvPgo8cmVjdCB4PSI0NzkuNyIgeT0iMjI0LjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZkMzZlIiB0cmFuc2Zvcm09InJvdGF0ZSg3IDQ3OS43IDIyNC4yKSIvPgo8cmVjdCB4PSI0ODYuNyIgeT0iMjQxLjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSg5IDQ4Ni43IDI0MS4xKSIvPgo8cmVjdCB4PSI1MTMuNiIgeT0iMjQxLjIiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtNiA1MTMuNiAyNDEuMikiLz4KPHJlY3QgeD0iNTM2LjYiIHk9IjIzOC41IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iIzdlZDdjNCIgdHJhbnNmb3JtPSJyb3RhdGUoLTYzIDUzNi42IDIzOC41KSIvPgo8cmVjdCB4PSI0NDAuNSIgeT0iMjM1LjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjZmZmZmZmIiB0cmFuc2Zvcm09InJvdGF0ZSg1IDQ0MC41IDIzNS4zKSIvPgo8cmVjdCB4PSI1MTIuMiIgeT0iMjMwLjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgzNyA1MTIuMiAyMzAuNSkiLz4KPHJlY3QgeD0iNDE2LjUiIHk9IjIzMS42IiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZDM2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTI2IDQxNi41IDIzMS42KSIvPgo8cmVjdCB4PSI0NjcuMyIgeT0iMjI5LjEiIHdpZHRoPSIxNCIgaGVpZ2h0PSI1IiByeD0iMi41IiBmaWxsPSIjN2M0YTcyIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDkgNDY3LjMgMjI5LjEpIi8+CjxyZWN0IHg9IjQ1NS4xIiB5PSIyMjguMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjUiIHJ4PSIyLjUiIGZpbGw9IiNmZmQzNmUiIHRyYW5zZm9ybT0icm90YXRlKC0zMSA0NTUuMSAyMjguMikiLz4KPHJlY3QgeD0iNDA2LjkiIHk9IjIzMi4zIiB3aWR0aD0iMTQiIGhlaWdodD0iNSIgcng9IjIuNSIgZmlsbD0iI2ZmZmZmZiIgdHJhbnNmb3JtPSJyb3RhdGUoLTU0IDQwNi45IDIzMi4zKSIvPgo8dGV4dCB4PSI0NTAiIHk9IjE0OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI5MiI+8J+MuDwvdGV4dD4KPHJlY3QgeD0iNDI3IiB5PSIxNjgiIHdpZHRoPSI0NiIgaGVpZ2h0PSI1NCIgcng9IjIwIiBmaWxsPSIjN2M0YTcyIi8+CjxwYXRoIGQ9Ik00NTAgMTY5IEM0MjUgMTM4LCA0NzggMTQxLCA0NTAgMTY5WiIgZmlsbD0iI2ZmZDY2YiIvPgo8L2c+Cjx0ZXh0IHg9IjQ1MCIgeT0iNjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YTNjNGMiPkVsZWdhbnQgRmxvcmFsPC90ZXh0Pgo8L3N2Zz4=" alt="Kue dekorasi bunga dari Manis Cerita" />
+          </div>
+          <div class="about-mini">
+            <strong>8+</strong>
+            <span>Tahun membuat momen lebih manis</span>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="eyebrow">Tentang Manis Cerita</span>
+          <h2>Kami percaya setiap kue menyimpan cerita.</h2>
+          <p>
+            Manis Cerita berawal dari dapur rumahan dan berkembang menjadi toko kue
+            yang melayani berbagai perayaan. Kami menggabungkan rasa yang nyaman,
+            dekorasi modern, dan pelayanan personal agar proses memesan kue terasa mudah.
+          </p>
+          <div class="about-list">
+            <div><b>✓</b><span><strong>Bahan berkualitas</strong><small>Tanpa mengorbankan rasa dan tekstur.</small></span></div>
+            <div><b>✓</b><span><strong>Desain sesuai kebutuhan</strong><small>Dari sederhana sampai bertingkat.</small></span></div>
+            <div><b>✓</b><span><strong>Komunikasi jelas</strong><small>Detail pesanan dikonfirmasi sebelum produksi.</small></span></div>
+          </div>
+          <a class="text-link" href="#kontak">Kenali layanan kami lebih lanjut →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad testimonial-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Cerita pelanggan</span>
+          <h2>Kue yang datang tepat waktu, rasa yang selalu diingat</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Desainnya persis seperti referensi, bahkan lebih cantik. Anak saya senang sekali saat melihat kuenya.”</p>
+            <div class="person"><span>AN</span><div><strong>Anisa N.</strong><small>Pesan Unicorn Dream</small></div></div>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Rasanya tidak terlalu manis, teksturnya lembut, dan pengirimannya aman. Akan pesan lagi untuk acara kantor.”</p>
+            <div class="person"><span>DP</span><div><strong>Dimas P.</strong><small>Pesan Chocolate Royale</small></div></div>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Admin membantu memilih ukuran yang pas. Semua tamu dapat bagian dan kuenya tetap terlihat elegan.”</p>
+            <div class="person"><span>MR</span><div><strong>Maya R.</strong><small>Pesan Elegant Floral</small></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad faq-section" id="faq">
+      <div class="container faq-grid">
+        <div>
+          <span class="eyebrow">Pertanyaan umum</span>
+          <h2>Sebelum memesan, mungkin kamu ingin tahu ini.</h2>
+          <p>Belum menemukan jawaban? Hubungi kami melalui formulir di bawah.</p>
+          <a class="btn primary" href="#kontak">Tanya Kami</a>
+        </div>
+
+        <div class="accordion">
+          <article class="faq-item active">
+            <button><span>Berapa hari sebelumnya harus memesan?</span><b>−</b></button>
+            <div><p>Untuk desain katalog, minimal H-2. Untuk custom cake atau kue bertingkat, disarankan H-5 sampai H-7 agar hasil lebih maksimal.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Apakah desain dapat diubah?</span><b>+</b></button>
+            <div><p>Ya. Warna, tulisan, rasa, topper, dan beberapa detail dekorasi dapat disesuaikan dengan kebutuhan.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Apakah tersedia pengiriman?</span><b>+</b></button>
+            <div><p>Tersedia pengiriman terjadwal dalam area layanan. Biaya dihitung berdasarkan jarak dan ukuran kue.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Bagaimana cara menyimpan kue?</span><b>+</b></button>
+            <div><p>Simpan di chiller dan keluarkan 20–30 menit sebelum disajikan agar teksturnya kembali lembut.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Apakah bisa pesan dalam jumlah banyak?</span><b>+</b></button>
+            <div><p>Bisa. Kami melayani ulang tahun sekolah, acara kantor, hampers, dan pesanan event dengan jumlah besar.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad contact-section" id="kontak">
+      <div class="container contact-shell">
+        <div class="contact-copy">
+          <span class="eyebrow light">Siap membuat perayaanmu lebih manis?</span>
+          <h2>Ceritakan kue yang kamu inginkan.</h2>
+          <p>
+            Isi formulir singkat. Tim kami akan menghubungi untuk mengonfirmasi desain,
+            ukuran, rasa, tanggal, dan estimasi harga.
+          </p>
+          <div class="contact-details">
+            <span>📍 Jl. Bahagia No. 18, Kota Anda</span>
+            <span>☎ 0812-3456-7890</span>
+            <span>✉ halo@maniscerita.id</span>
+            <span>🕘 Senin–Minggu, 08.00–20.00</span>
+          </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <div class="form-row">
+            <label>Nama lengkap<input type="text" name="nama" placeholder="Nama Anda" required /></label>
+            <label>Nomor WhatsApp<input type="tel" name="whatsapp" placeholder="08xxxxxxxxxx" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Tanggal acara<input type="date" name="tanggal" required /></label>
+            <label>Jenis pesanan
+              <select name="jenis" required>
+                <option value="">Pilih jenis kue</option>
+                <option>Kue katalog</option>
+                <option>Custom cake</option>
+                <option>Kue anak</option>
+                <option>Kue bertingkat</option>
+                <option>Pesanan kantor</option>
+              </select>
+            </label>
+          </div>
+          <label>Pesan / detail kue<textarea name="pesan" rows="5" placeholder="Contoh: tema bunga pink, ukuran 16 cm, rasa cokelat, tulisan Happy Birthday Ibu..." required></textarea></label>
+          <button class="btn primary full" type="submit">Kirim Pesanan via WhatsApp</button>
+          <small>Setelah dikirim, detail pesanan akan dibuka di WhatsApp agar dapat langsung dikonfirmasi.</small>
+          <div class="form-success" id="formSuccess">Detail pesanan sedang dibuka di WhatsApp.</div>
+        </form>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <span>💌</span>
+          <div><strong>Dapatkan promo ulang tahun dan inspirasi desain terbaru</strong><p>Kami hanya mengirim informasi yang relevan, tanpa spam.</p></div>
+        </div>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Email Anda" required />
+          <button>Daftar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#beranda">
+          <span class="brand-mark">MC</span>
+          <span><strong>Manis Cerita</strong><small>Cake & Celebration</small></span>
+        </a>
+        <p>Kue ulang tahun dan custom cake untuk membuat setiap perayaan terasa lebih personal.</p>
+        <div class="socials"><a href="#">IG</a><a href="#">FB</a><a href="#">TT</a><a href="#">WA</a></div>
+      </div>
+      <div><h4>Belanja</h4><a href="#katalog">Semua Kue</a><a href="#katalog">Kue Anak</a><a href="#katalog">Kue Elegan</a><a href="#custom">Custom Cake</a></div>
+      <div><h4>Informasi</h4><a href="#cara-pesan">Cara Pesan</a><a href="#faq">FAQ</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Hubungi Kami</a></div>
+      <div><h4>Layanan</h4><a href="#kontak">Pesanan Kantor</a><a href="#kontak">Pengiriman</a><a href="#kontak">Konsultasi Desain</a><a href="#kontak">Kebijakan Pemesanan</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Manis Cerita Cake Shop. Semua hak dilindungi.</p>
+      <div><a href="#">Privasi</a><a href="#">Syarat & Ketentuan</a></div>
+    </div>
+  </footer>
+
+  <button class="floating-wa" aria-label="Chat WhatsApp">💬 <span>Pesan via WhatsApp</span></button>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">Pesanan Anda</span>
+        <h2>Keranjang Kue</h2>
+      </div>
+      <button class="cart-close" id="cartClose" aria-label="Tutup keranjang">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <span>🧁</span>
+      <h3>Keranjang masih kosong</h3>
+      <p>Tambahkan kue dari katalog, lalu checkout langsung melalui WhatsApp.</p>
+      <button class="btn secondary full" id="cartShopButton">Lihat Katalog</button>
+    </div>
+
+    <div class="cart-summary" id="cartSummary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">Rp0</strong></div>
+      <small>Biaya pengiriman akan dikonfirmasi berdasarkan alamat dan ukuran kue.</small>
+      <button class="btn primary full" id="checkoutWhatsApp">Checkout via WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast">Kue ditambahkan ke keranjang.</div>
+
+  <script>
+/*
+  MANIS CERITA — Konfigurasi cepat
+  Ganti WHATSAPP_NUMBER dengan nomor WhatsApp toko dalam format internasional,
+  tanpa tanda +, spasi, atau tanda hubung. Contoh Indonesia: 6281234567890.
+*/
+const WHATSAPP_NUMBER = "6281234567890";
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".main-nav");
+const cartCount = document.getElementById("cartCount");
+const toast = document.getElementById("toast");
+const catalogSearch = document.getElementById("catalogSearch");
+const heroSearch = document.getElementById("heroSearch");
+const heroSearchBtn = document.getElementById("heroSearchBtn");
+const productCards = [...document.querySelectorAll(".product-card")];
+const filterButtons = [...document.querySelectorAll(".filter-tabs button")];
+const emptyState = document.getElementById("emptyState");
+
+const cartButton = document.getElementById("cartButton");
+const cartDrawer = document.getElementById("cartDrawer");
+const cartOverlay = document.getElementById("cartOverlay");
+const cartClose = document.getElementById("cartClose");
+const cartItems = document.getElementById("cartItems");
+const cartEmpty = document.getElementById("cartEmpty");
+const cartSummary = document.getElementById("cartSummary");
+const cartSubtotal = document.getElementById("cartSubtotal");
+const cartShopButton = document.getElementById("cartShopButton");
+const checkoutWhatsApp = document.getElementById("checkoutWhatsApp");
+
+let currentFilter = "semua";
+let cart = JSON.parse(localStorage.getItem("manisCeritaCart") || "[]");
+
+const rupiah = number =>
+  new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    maximumFractionDigits: 0
+  }).format(number);
+
+const parsePrice = text => {
+  const digits = String(text).replace(/\D/g, "");
+  return Number(digits || 0);
+};
+
+const safeText = value => String(value || "").trim();
+
+menuToggle?.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(open));
+  menuToggle.textContent = open ? "✕" : "☰";
+});
+
+document.querySelectorAll(".main-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+    if (menuToggle) menuToggle.textContent = "☰";
+  });
+});
+
+function applyFilters() {
+  const query = safeText(catalogSearch.value).toLowerCase();
+  let visible = 0;
+
+  productCards.forEach(card => {
+    const category = card.dataset.category;
+    const name = card.dataset.name;
+    const matchFilter = currentFilter === "semua" || category === currentFilter;
+    const matchSearch = !query || name.includes(query);
+    const show = matchFilter && matchSearch;
+
+    card.classList.toggle("hidden", !show);
+    if (show) visible += 1;
+  });
+
+  emptyState.classList.toggle("show", visible === 0);
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    currentFilter = button.dataset.filter;
+    filterButtons.forEach(btn => btn.classList.toggle("active", btn === button));
+    applyFilters();
+  });
+});
+
+catalogSearch?.addEventListener("input", applyFilters);
+
+document.querySelectorAll("[data-category-link]").forEach(link => {
+  link.addEventListener("click", () => {
+    const category = link.dataset.categoryLink;
+    const target = filterButtons.find(btn => btn.dataset.filter === category);
+    if (target) {
+      currentFilter = category;
+      filterButtons.forEach(btn => btn.classList.toggle("active", btn === target));
+      setTimeout(applyFilters, 200);
+    }
+  });
+});
+
+function runHeroSearch() {
+  catalogSearch.value = heroSearch.value;
+  currentFilter = "semua";
+  filterButtons.forEach(btn => btn.classList.toggle("active", btn.dataset.filter === "semua"));
+  applyFilters();
+  document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => catalogSearch.focus(), 500);
+}
+
+heroSearchBtn?.addEventListener("click", runHeroSearch);
+heroSearch?.addEventListener("keydown", event => {
+  if (event.key === "Enter") runHeroSearch();
+});
+
+document.getElementById("searchFocus")?.addEventListener("click", () => {
+  document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => catalogSearch.focus(), 500);
+});
+
+function saveCart() {
+  localStorage.setItem("manisCeritaCart", JSON.stringify(cart));
+}
+
+function getCartQuantity() {
+  return cart.reduce((sum, item) => sum + item.quantity, 0);
+}
+
+function getCartTotal() {
+  return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+}
+
+function updateCartCount() {
+  cartCount.textContent = getCartQuantity();
+}
+
+function renderCart() {
+  cartItems.innerHTML = "";
+
+  cart.forEach(item => {
+    const element = document.createElement("article");
+    element.className = "cart-item";
+    element.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <div>
+        <h4>${item.name}</h4>
+        <div class="cart-item-price">${rupiah(item.price)}</div>
+        <div class="cart-qty">
+          <button type="button" data-action="minus" data-id="${item.id}" aria-label="Kurangi jumlah">−</button>
+          <span>${item.quantity}</span>
+          <button type="button" data-action="plus" data-id="${item.id}" aria-label="Tambah jumlah">+</button>
+        </div>
+      </div>
+      <button type="button" class="cart-remove" data-action="remove" data-id="${item.id}" aria-label="Hapus produk">×</button>
+    `;
+    cartItems.appendChild(element);
+  });
+
+  const hasItems = cart.length > 0;
+  cartEmpty.classList.toggle("hide", hasItems);
+  cartSummary.classList.toggle("show", hasItems);
+  cartSubtotal.textContent = rupiah(getCartTotal());
+  updateCartCount();
+  saveCart();
+}
+
+function addProductToCart(card) {
+  const name = safeText(card.querySelector("h3")?.textContent);
+  const image = card.querySelector("img")?.getAttribute("src") || "";
+  const priceText = safeText(card.querySelector(".product-bottom strong")?.textContent);
+  const price = parsePrice(priceText);
+  const id = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+  const existing = cart.find(item => item.id === id);
+  if (existing) {
+    existing.quantity += 1;
+  } else {
+    cart.push({ id, name, image, price, quantity: 1 });
+  }
+
+  renderCart();
+  showToast(`${name} ditambahkan ke keranjang.`);
+}
+
+document.querySelectorAll(".add-cart").forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".product-card");
+    addProductToCart(card);
+    button.textContent = "✓ Ditambahkan";
+    setTimeout(() => button.textContent = "+ Keranjang", 1200);
+  });
+});
+
+cartItems?.addEventListener("click", event => {
+  const button = event.target.closest("button[data-action]");
+  if (!button) return;
+
+  const item = cart.find(product => product.id === button.dataset.id);
+  if (!item) return;
+
+  if (button.dataset.action === "plus") item.quantity += 1;
+  if (button.dataset.action === "minus") item.quantity -= 1;
+  if (button.dataset.action === "remove" || item.quantity <= 0) {
+    cart = cart.filter(product => product.id !== item.id);
+  }
+
+  renderCart();
+});
+
+function openCart() {
+  cartDrawer.classList.add("open");
+  cartOverlay.classList.add("show");
+  cartDrawer.setAttribute("aria-hidden", "false");
+  cartOverlay.setAttribute("aria-hidden", "false");
+  document.body.classList.add("cart-open");
+}
+
+function closeCart() {
+  cartDrawer.classList.remove("open");
+  cartOverlay.classList.remove("show");
+  cartDrawer.setAttribute("aria-hidden", "true");
+  cartOverlay.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("cart-open");
+}
+
+cartButton?.addEventListener("click", openCart);
+cartClose?.addEventListener("click", closeCart);
+cartOverlay?.addEventListener("click", closeCart);
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeCart();
+});
+
+cartShopButton?.addEventListener("click", () => {
+  closeCart();
+  document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+});
+
+checkoutWhatsApp?.addEventListener("click", () => {
+  if (!cart.length) return;
+
+  const lines = cart.map((item, index) =>
+    `${index + 1}. ${item.name} — ${item.quantity} x ${rupiah(item.price)}`
+  );
+
+  const message = [
+    "Halo Manis Cerita, saya ingin memesan kue berikut:",
+    "",
+    ...lines,
+    "",
+    `Subtotal: ${rupiah(getCartTotal())}`,
+    "",
+    "Mohon konfirmasi ketersediaan, tanggal pengambilan/pengiriman, dan biaya kirim. Terima kasih."
+  ].join("\n");
+
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+});
+
+document.querySelectorAll(".wish").forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    button.textContent = button.classList.contains("active") ? "♥" : "♡";
+    showToast(button.classList.contains("active") ? "Disimpan ke favorit." : "Dihapus dari favorit.");
+  });
+});
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(window.toastTimer);
+  window.toastTimer = setTimeout(() => toast.classList.remove("show"), 1800);
+}
+
+document.querySelectorAll(".faq-item button").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    const isActive = item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      faq.classList.remove("active");
+      faq.querySelector("button b").textContent = "+";
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+      button.querySelector("b").textContent = "−";
+    }
+  });
+});
+
+document.getElementById("orderForm")?.addEventListener("submit", event => {
+  event.preventDefault();
+
+  const data = new FormData(event.target);
+  const message = [
+    "Halo Manis Cerita, saya ingin konsultasi/pesan kue.",
+    "",
+    `Nama: ${safeText(data.get("nama"))}`,
+    `WhatsApp: ${safeText(data.get("whatsapp"))}`,
+    `Tanggal acara: ${safeText(data.get("tanggal"))}`,
+    `Jenis pesanan: ${safeText(data.get("jenis"))}`,
+    "",
+    "Detail kue:",
+    safeText(data.get("pesan")),
+    "",
+    "Mohon bantu konfirmasi desain, ukuran, harga, dan jadwal. Terima kasih."
+  ].join("\n");
+
+  document.getElementById("formSuccess").classList.add("show");
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+});
+
+document.getElementById("newsletterForm")?.addEventListener("submit", event => {
+  event.preventDefault();
+  event.target.reset();
+  showToast("Terima kasih! Email Anda sudah terdaftar.");
+});
+
+document.querySelector(".floating-wa")?.addEventListener("click", () => {
+  const message = "Halo Manis Cerita, saya ingin bertanya mengenai kue ulang tahun.";
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+});
+
+const dateInput = document.querySelector('input[type="date"]');
+if (dateInput) {
+  const minimumDate = new Date();
+  minimumDate.setDate(minimumDate.getDate() + 2);
+  dateInput.min = minimumDate.toISOString().split("T")[0];
+}
+
+renderCart();
+
+  </script>
+</body>
+</html>
